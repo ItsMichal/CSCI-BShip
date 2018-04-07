@@ -35,7 +35,7 @@ private:
     string myName;
 
     //name database
-    const string nameDB[5] = {"Destroyer", "Submarine", "Cruiser", "Battleship", "Carrier"};
+    //const string nameDB[5] = {"Destroyer", "Submarine", "Cruiser", "Battleship", "Carrier"};
 
 public:
     //Constructor

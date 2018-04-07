@@ -12,7 +12,7 @@ class UserController : public BShipController {
 private:
     istream inp; //input to parse from user
 public:
-    UserController(BShipGrid _myGrid, BShipGrid _enemyGrid, istream _inp); //Constructor
+    UserController(BShipGrid* _myGrid, BShipGrid* _enemyGrid, istream* _inp); //Constructor
     vector<int> getNextMove(); //get the next move
 };
 

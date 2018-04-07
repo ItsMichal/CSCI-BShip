@@ -9,6 +9,8 @@
 #include <fstream>
 #include <string>
 #include "BShipController.h"
+#include "UserController.h"
+#include "CPUController.h
 #include "BShipGrid.h"
 #include "BShipFacts.h"
 
@@ -22,22 +24,24 @@ private:
     ostream *outp; //output stream
 
     //Grids
-    BShipGrid playerOneGrid;
-    BShipGrid playerTwoGrid;
+    BShipGrid* playerOneGrid;
+    BShipGrid* playerTwoGrid;
 
     //Controllers
-    BShipController playerOne;
-    BShipController playerTwo;
+    BShipController* playerOne;
+    BShipController* playerTwo;
 
     //Game Facts
-    BShipFacts gameFacts;
+    //BShipFacts gameFacts;
 
     //Game Logic (Private)
-    void setup(); //run setup
+    void doTurn();
 
     //Game Info
     int turnNumber = 0;
     int gridSize = 10;
+    bool gameSetUp = false;
+    bool gameRunning = false;
     bool gameFinished = false;
     const string welcomeMessage = "Welcome to Michal's BShip Game!";
     const string instructionMessage = "-Press Q at any time to quit the game."
@@ -49,15 +53,16 @@ public:
 
     //Constructors
     BShipGame(); //Empty constructor -- always throws invalid file error at runtime, since no input file is specified
-    BShipGame(istream _finp); //Minimum safe constructor
-    BShipGame(istream _inp, istream _finp, ostream _outp);
-    BShipGame(istream _inp, istream _finp, ostream _outp, int _turnNumber, int _gridSize); //Full Constructor
+    //BShipGame(istream* _inp); //Minimum safe constructor
+    BShipGame(istream* _inp, ifstream* _finp, ostream* _outp = &cout, int _gridSize = 10, int _difficulty = 0); //Full Constructor
 
     //Game Logic
     string welcome(); //display welcome message
     string instructions(); //display instructions message
 
-    void run(); //Have this class run the game.
+    bool setup(); //run setup
+    bool run(); //Have this class run the game.
+
 };
 
 

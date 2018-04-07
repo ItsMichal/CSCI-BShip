@@ -1,6 +1,6 @@
 #include <iostream>
 
-#include "BShipGame.h"
+#include "BShip/BShipGame.h"
 
 int main() {
     std::cout << "Hello, World!" << std::endl;

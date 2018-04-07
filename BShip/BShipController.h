@@ -19,7 +19,7 @@ protected:
     BShipGrid enemyGrid;
 public:
     //Constructor
-    BShipController(BShipGrid _myGrid, BShipGrid _enemyGrid); //No empty constructor- both grids required.
+    BShipController(BShipGrid* _myGrid, BShipGrid* _enemyGrid); //No empty constructor- both grids required.
 
     //Logic
     vector<int> getNextCoordinates();

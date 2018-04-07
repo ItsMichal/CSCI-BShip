@@ -10,7 +10,7 @@
 #include <vector>
 #include "BShipGame.h"
 
-struct BShipGridSpot;
+virtual struct BShipGridSpot;
 
 class BShipGrid {
 private:
@@ -23,11 +23,13 @@ private:
     vector<vector<BShipGridSpot>> vectorGrid;
     vector<BShip> ships;
 
-public:
-    BShipGrid(BShipGame _myGame);
-    BShipGrid(BShipGame _myGame, int _size);
+    bool checkCollision();
 
-    void file_populate(istream inp);
+public:
+    BShipGrid();
+    BShipGrid(int _size);
+
+    void file_populate(ifstream* finp);
     void rand_populate();
     bool isValid();
     bool isCoordinateInBounds(vector<int> coord);
@@ -35,16 +37,18 @@ public:
     string displayFullGrid();
     string displayGridNoShips();
     bool areAllSunk();
+
+    int getSize();
 };
 
 //Include struct for GridSpot here
 
 #include "BShip.h"
 
-struct BShipGridSpot {
-    bool empty;
+virtual struct BShipGridSpot {
+    bool empty = true;
     BShip motherShip;
-    bool hit;
+    bool hit = false;
 };
 
 #endif //BSHIP_BSHIPGRID_H
