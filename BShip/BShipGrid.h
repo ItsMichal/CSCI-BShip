@@ -11,9 +11,11 @@
 #include <sstream>
 #include <map>
 #include <vector>
-//#include "BShip.h"
-#include "BShipGridSpot.h"
+#include <ctime>
+#include <random>
 
+#include "BShipGridSpot.h"
+#include "BShip.h"
 
 class BShipGrid {
 private:
@@ -23,26 +25,29 @@ private:
 
     //2D Vector to be used as grid
     int size; //side length of grid, maxes out at 20, minimum is 6, default is 10
-    vector<vector<BShipGridSpot>> vectorGrid;
+    vector<vector<BShipGridSpot>> grid;
     vector<BShip> ships;
 
-    bool checkCollision();
+    bool validate(BShip* s);
     bool areSame(string x, string y);
     int coordFromLetter(char x);
+    void addShipToGrid(BShip* s);
 
 public:
     BShipGrid(int _size = 10);
 
     void file_populate(ifstream* finp);
     void rand_populate();
-    bool isValid();
-    bool isCoordinateInBounds(vector<int> coord);
-    bool isShipInBounds(vector<int> coord, int size, bool isHorizontal);
+//    bool isValid();
+//    bool isCoordinateInBounds(vector<int> coord);
+//    bool isShipInBounds(vector<int> coord, int size, bool isHorizontal);
     string displayFullGrid();
     string displayGridNoShips();
     bool areAllSunk();
 
-    //BShip* hit(vector<int> coords);
+    bool hit(vector<int> coords);
+    BShip* getShipAtCoords(vector<int> coords);
+    BShipGridSpot getSpotAtCoords(vector<int> coords);
 
     int getSize();
 };

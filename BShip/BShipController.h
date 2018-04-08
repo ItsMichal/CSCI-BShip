@@ -13,14 +13,14 @@ using namespace std;
 class BShipController {
 protected:
     vector<int> nextCoordinates;
-    BShipGrid myGrid;
-    BShipGrid enemyGrid;
+    BShipGrid* myGrid;
+    BShipGrid* enemyGrid;
 public:
     //Constructor
     BShipController(BShipGrid* _myGrid, BShipGrid* _enemyGrid); //No empty constructor- both grids required.
 
     //Logic
-    vector<int> getNextCoordinates();
+    virtual vector<int> getNextCoordinates() = 0;
 };
 
 

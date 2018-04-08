@@ -123,6 +123,33 @@ BShip/fast:
 	$(MAKE) -f CMakeFiles/BShip.dir/build.make CMakeFiles/BShip.dir/build
 .PHONY : BShip/fast
 
+BShip/BShip.o: BShip/BShip.cpp.o
+
+.PHONY : BShip/BShip.o
+
+# target to build an object file
+BShip/BShip.cpp.o:
+	$(MAKE) -f CMakeFiles/BShip.dir/build.make CMakeFiles/BShip.dir/BShip/BShip.cpp.o
+.PHONY : BShip/BShip.cpp.o
+
+BShip/BShip.i: BShip/BShip.cpp.i
+
+.PHONY : BShip/BShip.i
+
+# target to preprocess a source file
+BShip/BShip.cpp.i:
+	$(MAKE) -f CMakeFiles/BShip.dir/build.make CMakeFiles/BShip.dir/BShip/BShip.cpp.i
+.PHONY : BShip/BShip.cpp.i
+
+BShip/BShip.s: BShip/BShip.cpp.s
+
+.PHONY : BShip/BShip.s
+
+# target to generate assembly for a file
+BShip/BShip.cpp.s:
+	$(MAKE) -f CMakeFiles/BShip.dir/build.make CMakeFiles/BShip.dir/BShip/BShip.cpp.s
+.PHONY : BShip/BShip.cpp.s
+
 BShip/BShipGrid.o: BShip/BShipGrid.cpp.o
 
 .PHONY : BShip/BShipGrid.o
@@ -186,6 +213,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... BShip"
+	@echo "... BShip/BShip.o"
+	@echo "... BShip/BShip.i"
+	@echo "... BShip/BShip.s"
 	@echo "... BShip/BShipGrid.o"
 	@echo "... BShip/BShipGrid.i"
 	@echo "... BShip/BShipGrid.s"

@@ -9,14 +9,9 @@
 class BShipGridSpot {
 public:
     bool empty = true;
-    //BShip motherShip;
+    BShip* motherShip;
     bool hit = false;
-    BShipGridSpot(){
-        //BShip motherShip();
-        //BShip* empty = &motherShip;
-        //empty = nullptr;
-
-    };
+    BShipGridSpot() {};
 };
 
 

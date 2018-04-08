@@ -6,6 +6,10 @@
 
 #IncludeRegexTransform: 
 
+/Users/michal/CLionProjects/BShip/BShip/BShip.cpp
+BShip.h
+/Users/michal/CLionProjects/BShip/BShip/BShip.h
+
 /Users/michal/CLionProjects/BShip/BShip/BShip.h
 string
 -
@@ -29,8 +33,14 @@ map
 -
 vector
 -
+ctime
+-
+random
+-
 BShipGridSpot.h
 /Users/michal/CLionProjects/BShip/BShip/BShipGridSpot.h
+BShip.h
+/Users/michal/CLionProjects/BShip/BShip/BShip.h
 
 /Users/michal/CLionProjects/BShip/BShip/BShipGridSpot.h
 BShip.h

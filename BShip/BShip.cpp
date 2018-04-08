@@ -37,3 +37,19 @@ bool BShip::isHorizontal() {
 int BShip::getHits() {
     return hits;
 }
+
+vector<int> BShip::getCoords() {
+    return coords;
+}
+
+int BShip::getRow() {
+    return coords[0];
+}
+
+int BShip::getCol() {
+    return coords[1];
+}
+
+int BShip::getSize() {
+    return size;
+}

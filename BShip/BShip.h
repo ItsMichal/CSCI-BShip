@@ -48,6 +48,10 @@ public:
     bool isSunk();
     bool isHorizontal();
     int getHits();
+    vector<int> getCoords();
+    int getRow();
+    int getCol();
+    int getSize();
 };
 
 
