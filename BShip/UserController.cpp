@@ -25,9 +25,9 @@ vector<int> UserController::getNextCoordinates() {
                     string num = input.substr(1);
                     try{
                         row = stoi(num)-1;
-                        if(row > gSize || row <= 0){
+                        if(row < gSize && row >= 0){
                             col = coordFromLetter(input[0]);
-                            if(col > gSize || col <= 0){
+                            if(col < gSize && col >= 0){
                                 coordinates[0] = row;
                                 coordinates[1] = col;
                                 if(!enemyGrid->getSpotAtCoords(coordinates).hit){
@@ -47,6 +47,9 @@ vector<int> UserController::getNextCoordinates() {
                         *outp << "Invalid input, make sure the coordinate has a number." << endl;
                     }
                 }else{
+                    if(input.size() == 1 && (input[0] == 'q' || input[0] == 'Q')){
+                        throw new string("User has quit, exiting...");
+                    }
                     *outp << "Invalid input, make sure you use the correct format." << endl;
                 }
             }else{

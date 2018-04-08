@@ -1,6 +1,6 @@
 TypeOfShip,Location,HorizOrVer
-Carrier,E1,V
+Carrier,E5,V
 Battleship,G3,V
 Destroyer,F2,H
-Cruiser,H3,V
-Submarine,D1,H
+Tug Boat,H3,V
+Submarine,A1,V231321321321

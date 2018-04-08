@@ -37,9 +37,11 @@ BShipGame::BShipGame(istream* _inp, ifstream* _finp, ostream* _outp, int _gridSi
 
     //Create Controllers
     playerOne = new UserController(playerOneGrid, playerTwoGrid, inp, outp);
-    playerTwo = new CPUController(playerTwoGrid, playerOneGrid, 4);
+    playerTwo = new CPUController(playerTwoGrid, playerOneGrid, difficulty);
+    //playerTwo = new CPUController(playerTwoGrid, playerOneGrid, _difficulty);
 
     gridSize = _gridSize;
+    difficulty = _difficulty;
 }
 
 string BShipGame::welcome() {
@@ -99,11 +101,13 @@ bool BShipGame::setup() {
                         throw new string("User has quit, exiting...");
                     }
                     playerTwo = new CPUController(playerTwoGrid, playerOneGrid, select);
+                    difficulty = select;
                     *outp << "Difficulty successfully set to " << to_string(select) << "."<<endl<<endl;
                     break;
                 }
                 case 3 : {
                     setNewFileFromInput();
+                    *outp << endl << "New file successfully loaded." << endl << endl;
                     break;
                 }
                 case 4 : {
@@ -139,6 +143,7 @@ bool BShipGame::setup() {
 
                 playerOneGrid = new BShipGrid(gridSize);
                 playerOneGrid->rand_populate();
+                playerTwo = new CPUController(playerTwoGrid, playerOneGrid, difficulty);
             }
         }else{
             *outp << "No file specified. Randomly populating your grid instead." << endl;
@@ -150,7 +155,7 @@ bool BShipGame::setup() {
 
 
         //DISPLAY GRIDS
-        *outp << "-CPU's Grid:-" << endl;
+        *outp <<  endl << "-CPU's Grid:-" << endl;
         *outp << playerTwoGrid->displayGridNoShips() << endl;
         *outp << "-Your Grid:-" << endl;
         *outp << playerOneGrid->displayFullGrid() << endl;
@@ -286,16 +291,20 @@ void BShipGame::setNewFileFromInput() {
     string fpath;
     while(!valid){
         if (getline(*inp, fpath)){
-            if(fpath.find(".csv") != string::npos && fpath.find(".csv") > fpath.size()-4){
+            if(fpath.find(*(new string(".csv"))) != string::npos && fpath.find(".csv") > fpath.size()-5){
                 ifstream oof(fpath);
                 if(oof.is_open() && !oof.fail()){
                     valid = true;
+                }else{
+                    *outp << "Keep in mind the filepath is relative to your PWD." << endl;
                 }
             }
         }
+        if(fpath.size() == 1 && (fpath[0] == 'q' || fpath[0] == 'Q')){
+            throw new string("User has quit, exiting...");
+        }
         if(!valid){
-            *outp << "Filepath not valid. File must end in .csv." << endl;
-            *outp << "Keep in mind the filepath is relative to your PWD." << endl;
+
             *outp << "Please enter a filepath: " << endl;
         }
     }

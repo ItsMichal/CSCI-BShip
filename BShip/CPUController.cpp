@@ -65,8 +65,8 @@ vector<int> CPUController::getRandomCoordinates() {
 
     bool valid = false;
     while(!valid){
-        tcoords[0] = rand() % (enemyGrid->getSize()-1);
-        tcoords[1] = rand() % (enemyGrid->getSize()-1);
+        tcoords[0] = (rand() % (enemyGrid->getSize()))+1;
+        tcoords[1] = (rand() % (enemyGrid->getSize()))+1;
 
         if(!enemyGrid->getSpotAtCoords(tcoords).hit){
             valid = true;
@@ -144,5 +144,5 @@ vector<int> CPUController::getCheaterCoordinates() {
         }
     }
 
-    throw "Out of...moves?";
+    throw new string("Out of...moves?");
 }

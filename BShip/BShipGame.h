@@ -40,6 +40,7 @@ private:
 
     //Game Info
     int turnNumber = 0;
+    int difficulty = 0;
     int gridSize = 10;
     bool gameSetUp = false;
     bool gameRunning = false;

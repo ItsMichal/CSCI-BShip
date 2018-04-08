@@ -9,6 +9,11 @@ using namespace std;
 BShipGrid::BShipGrid(int _size) : ships(0){
     //set size
     size = _size;
+    if(size > 25){
+        throw new string("Grid size is too large. Valid grid sizes are from 5 to 25.");
+    }else if(size < 5){
+        throw new string("Grid size is too small. Valid grid sizes are from 5 to 25.");
+    }
 
     //Create Grid
     for(int i = 0; i < size; i++){
@@ -40,6 +45,7 @@ BShipGrid::BShipGrid(int _size) : ships(0){
 void BShipGrid::file_populate(ifstream *finp) {
     //Size Key
     map<string, int> namekey;
+    namekey["Tug Boat"] = 1;
     namekey["Destroyer"] = 2;
     namekey["Submarine"] = 3;
     namekey["Cruiser"] = 3;
@@ -52,7 +58,9 @@ void BShipGrid::file_populate(ifstream *finp) {
 
     //IDEA FROM https://stackoverflow.com/a/37957126
     if(finp->is_open()) {
+
         while (getline(*finp, iline)) { //while there are still lines
+
             if(cntr != 0 && cntr <= 5) { //skip first line
 
                 //temp BShip vars
@@ -65,6 +73,7 @@ void BShipGrid::file_populate(ifstream *finp) {
                 string cell;
                 int subcntr = 0;
                 while (getline(line, cell, ',')) {
+                    //Scrub newline
 
                     switch(subcntr){
                         case 0: //name/size
@@ -92,6 +101,9 @@ void BShipGrid::file_populate(ifstream *finp) {
                             {
                                 tempname = "Destroyer";
                                 tempsize = namekey.at("Destroyer");
+                            }else if(areSame(cell, "Tug Boat")){
+                                tempname = "Tug Boat";
+                                tempsize = namekey.at("Tug Boat");
                             }else{
                                 throw new string("Invalid Value - Invalid Entry at Line " + to_string(cntr+1) + ", Cell " + to_string(subcntr+1));
                             }
@@ -114,7 +126,7 @@ void BShipGrid::file_populate(ifstream *finp) {
                             }
                             break;
                         case 2: //allignment
-                            if(cell.size() > 1){
+                            if(cell.size() >= 1){
                                 if(cell[0] == 'h' || cell[0] == 'H'){
                                     temphorizontal = true; // false = v
                                 }else if(cell[0] == 'v' || cell[0] == 'V'){
@@ -134,12 +146,12 @@ void BShipGrid::file_populate(ifstream *finp) {
                 }
 
                 //CREATE BSHIP HERE
-                cout << to_string(cntr) << ": " << endl;
-                cout << tempname << endl;
-                cout << to_string(tempsize) << endl;
-                cout << (temphorizontal ? "Horizontal" : "Vertical") << endl;
-                cout << to_string(tempcoords[1]) << "," << to_string(tempcoords[0]) << endl;
-                cout << "---" << endl;
+//                cout << to_string(cntr) << ": " << endl;
+//                cout << tempname << endl;
+//                cout << to_string(tempsize) << endl;
+//                cout << (temphorizontal ? "Horizontal" : "Vertical") << endl;
+//                cout << to_string(tempcoords[1]) << "," << to_string(tempcoords[0]) << endl;
+//                cout << "---" << endl;
 
                 BShip* temp = new BShip(tempname, tempsize, temphorizontal, tempcoords);
 
@@ -149,7 +161,7 @@ void BShipGrid::file_populate(ifstream *finp) {
                     throw new string("Ship Conflicts/Goes Out of Bounds on Row " + to_string(cntr+1));
                 }
 
-                cout << displayFullGrid() << endl;
+                //cout << displayFullGrid() << endl;
 
                 cntr++;
             }else{
@@ -214,7 +226,7 @@ bool BShipGrid::validate(BShip* s) {
     bool valid = true;
     //cout << "SANITY CHECK 1" << endl;
     //check OoB first
-    if (!tempAlign) {
+    if (tempAlign) {
         if (tempX + tempLen > size)
             valid = false;
     } else {
@@ -299,9 +311,21 @@ void BShipGrid::addShipToGrid(BShip* s) {
 
 string BShipGrid::displayFullGrid() {
     string finstr;
+    string finstr2;
 
-    finstr += "X | A | B | C | D | E | F | G | H | I | J |\n";
-    finstr += "___________________________________________\n";
+    finstr += "X |";
+    finstr2+= "____";
+    for(int i = 0; i < size; i++){
+
+        finstr += " ";
+        finstr += i + 'A';
+        finstr += " |";
+        finstr2 += "____";
+    }
+    finstr += "\n";
+
+
+    finstr += (finstr2 + "\n");
     for(int i = 0; i < grid.size(); i++){
         finstr += (i>=9) ? (to_string(i+1) + "| ") : (to_string(i+1) + " | ");
         for(int j = 0; j < grid[0].size(); j++){
@@ -323,16 +347,29 @@ string BShipGrid::displayFullGrid() {
         }
         finstr += "\n";
     }
-    finstr += "___________________________________________\n";
+    finstr += (finstr2 + "\n");
 
     return finstr;
 }
 
 string BShipGrid::displayGridNoShips(){
     string finstr;
+    string finstr2;
 
-    finstr += "X | A | B | C | D | E | F | G | H | I | J |\n";
-    finstr += "___________________________________________\n";
+    finstr += "X |";
+    finstr2+= "____";
+
+    for(int i = 0; i < size; i++){
+
+        finstr += " ";
+        finstr += i + 'A';
+        finstr += " |";
+        finstr2 += "____";
+    }
+    finstr += "\n";
+
+
+    finstr += (finstr2 + "\n");
     for(int i = 0; i < grid.size(); i++){
         finstr += (i>=9) ? (to_string(i+1) + "| ") : (to_string(i+1) + " | ");
         for(int j = 0; j < grid[0].size(); j++){
@@ -350,7 +387,7 @@ string BShipGrid::displayGridNoShips(){
         }
         finstr += "\n";
     }
-    finstr += "___________________________________________\n";
+    finstr += (finstr2 + "\n");
 
     return finstr;
 }
@@ -373,11 +410,11 @@ void BShipGrid::rand_populate() {
 
             if(thorizontal){
                 //smart assign trow and and tcol, so it doesn't go OoB
-                trow = rand() % 9;
-                tcol = rand() % (9-sizes[i]);
+                trow = rand() % (size-1);
+                tcol = rand() % ((size-1)-sizes[i]);
             }else{
-                tcol = rand() % 9;
-                trow = rand() % (9-sizes[i]);
+                tcol = rand() % (size-1);
+                trow = rand() % ((size-1)-sizes[i]);
             }
 
             //assign
