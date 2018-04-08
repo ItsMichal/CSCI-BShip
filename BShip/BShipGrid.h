@@ -26,7 +26,7 @@ private:
     //2D Vector to be used as grid
     int size; //side length of grid, maxes out at 20, minimum is 6, default is 10
     vector<vector<BShipGridSpot>> grid;
-    vector<BShip> ships;
+    vector<BShip*> ships;
 
     bool validate(BShip* s);
     bool areSame(string x, string y);

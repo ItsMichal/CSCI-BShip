@@ -6,7 +6,7 @@
 
 using namespace std;
 
-BShipGrid::BShipGrid(int _size) {
+BShipGrid::BShipGrid(int _size) : ships(0){
     //set size
     size = _size;
 
@@ -19,6 +19,17 @@ BShipGrid::BShipGrid(int _size) {
             grid[i].push_back(tempGS);
         }
     }
+
+
+
+
+
+    //Fill Ships
+//    for(int i = 0; i < 5; i++){
+//        vector<int> hecc (2,-1);
+//        BShip ahoy("",0,false, hecc);
+//        ships.push_back(ahoy);
+//    }
 
 
 }
@@ -220,8 +231,13 @@ bool BShipGrid::validate(BShip* s) {
     //Validate part 2 (collision)
     bool valid2 = true;
 
+    int ssize;
+
+
+
+
     for (int j = 0; j < ships.size(); j++) {
-        BShip* other = &ships[j];
+        BShip* other = ships[j];
 
         //parallel
         if (other->isHorizontal() == tempAlign) {
@@ -266,7 +282,7 @@ bool BShipGrid::validate(BShip* s) {
 
 void BShipGrid::addShipToGrid(BShip* s) {
 
-    ships.push_back(*s);
+    ships.push_back(s);
 
     //cout << "leng" << to_string(v.getLength()) << endl;
     for(int i = 0; i < s->getSize(); i++){
@@ -323,7 +339,7 @@ string BShipGrid::displayGridNoShips(){
             if(i == 5 && j == 7){
                 cout << "";
             }
-            if(!grid[i][j].hit || grid[i][j].empty) {
+            if(!grid[i][j].hit) {
                 finstr += "~   ";
                 //eventually replace with chars
             }else if(grid[i][j].hit && grid[i][j].empty) {
@@ -399,7 +415,8 @@ bool BShipGrid::hit(vector<int> coords) {
 
         //check if coords hit a ship
         if (!grid[coords[0]][coords[1]].empty && grid[coords[0]][coords[1]].motherShip != nullptr) {
-            grid[coords[0]][coords[1]].motherShip->hit();
+               grid[coords[0]][coords[1]].motherShip->hit();
+
         }
         return true;
     }else{
@@ -409,7 +426,7 @@ bool BShipGrid::hit(vector<int> coords) {
 
 bool BShipGrid::areAllSunk() {
     for(int i = 0; i < ships.size(); i++){
-        if(!ships[i].isSunk()){
+        if(!ships[i]->isSunk()){
             return false;
         }
     }

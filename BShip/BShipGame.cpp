@@ -3,6 +3,8 @@
 //
 
 #include "BShipGame.h"
+#include <chrono>
+#include <thread>
 
 using namespace std;
 
@@ -14,14 +16,14 @@ BShipGame::BShipGame() {
     outp = &cout;
 
     //Grids instanciation
-    BShipGrid* playerOneGrid = new BShipGrid(gridSize);
-    BShipGrid* playerTwoGrid = new BShipGrid(gridSize);
+    playerOneGrid = new BShipGrid(gridSize);
+    playerTwoGrid = new BShipGrid(gridSize);
 
     //Create Controllers
     CPUController user(playerOneGrid, playerTwoGrid, 0);
     CPUController cpu(playerTwoGrid, playerOneGrid, 0);
-    BShipController *playerOne = &user;
-    BShipController *playerTwo = &cpu;
+    playerOne = &user;
+    playerTwo = &cpu;
 
 }
 
@@ -29,19 +31,17 @@ BShipGame::BShipGame(istream* _inp, ifstream* _finp, ostream* _outp, int _gridSi
 
     //I/o instanciation
     inp = _inp;
-    ifstream hecc("ship_placement.csv");
-    finp = &hecc;
+    //ifstream hecc("ship_placement.csv");
+    finp = _finp;
     outp = _outp;
 
-    //Grids instanciation
-    BShipGrid* playerOneGrid = new BShipGrid(_gridSize);
-    BShipGrid* playerTwoGrid = new BShipGrid(_gridSize);
+    //Grids instantiation
+    playerOneGrid = new BShipGrid(_gridSize);
+    playerTwoGrid = new BShipGrid(_gridSize);
 
     //Create Controllers
-    CPUController user(playerOneGrid, playerTwoGrid, 5);
-    CPUController cpu(playerTwoGrid, playerOneGrid, 1);
-    BShipController *playerOne = &user;
-    BShipController *playerTwo = &cpu;
+    playerOne = new CPUController(playerOneGrid, playerTwoGrid, 6);
+    playerTwo = new CPUController(playerTwoGrid, playerOneGrid, 4);
 
     gridSize = _gridSize;
 }
@@ -84,10 +84,12 @@ bool BShipGame::setup() {
                 //*outp << "An unknown error occured during the file reading stage. Please check your file and try again. Randomly populating instead." << endl;
 
                 *outp << *e << endl;
-                int gSize = playerOneGrid->getSize();
-                delete playerOneGrid;
-                BShipGrid* playerOneGrid = new BShipGrid(gSize);
-                playerOneGrid->rand_populate();
+
+                return false;
+                //int gSize = playerOneGrid->getSize();
+                //delete playerOneGrid;
+                //BShipGrid* playerOneGrid = new BShipGrid(gSize);
+                //playerOneGrid->rand_populate();
             }
         }else{
             *outp << "No file specified. Randomly populating your grid instead." << endl;
@@ -120,11 +122,10 @@ void BShipGame::doTurn() {
         bool p1sunkship = false, p2sunkship = false, p1hitship = false, p2hitship = false;
 
         //Get next coordinates of both players
-        vector<int> p1coords(2,0);
-        vector<int> p2coords(2,0);
+        vector<int> p1coords(playerOne->getNextCoordinates());
+        vector<int> p2coords(playerTwo->getNextCoordinates());
 
-        p1coords = playerOne->getNextCoordinates();
-        p2coords = playerTwo->getNextCoordinates();
+
 
         //Hit corresponding grids
         playerTwoGrid->hit(p1coords);
@@ -189,6 +190,9 @@ bool BShipGame::runForever() {
         return false;
     while(!gameFinished){
         this->run();
+        //this_thread::sleep_for(chrono::seconds(1));
+        //cout << "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n" << endl;
+        //cout << "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n" << endl;
     }
     return true;
 }

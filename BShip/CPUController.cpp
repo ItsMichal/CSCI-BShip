@@ -18,7 +18,7 @@ int CPUController::getDifficulty() {
 
 //Returns false on invalid input, thereby also ignoring it.
 bool CPUController::setDifficulty(int d) {
-    if(d > 0 && d < 6){
+    if(d >= 0 && d < 8){
         difficulty = d;
         return true;
     }else{
@@ -43,6 +43,18 @@ vector<int> CPUController::getNextCoordinates() {
         }else{
             return getSmartCoordinates();
         }
+    }else if(difficulty == 5){
+        if(rand() % 3 == 0){
+            return getCheaterCoordinates();
+        }else{
+            return getSmartCoordinates();
+        }
+    }else if(difficulty = 6){
+        if(rand() % 2 == 0){
+            return getCheaterCoordinates();
+        }else{
+            return getSmartCoordinates();
+        }
     }else{
         return getCheaterCoordinates();
     }
@@ -53,8 +65,8 @@ vector<int> CPUController::getRandomCoordinates() {
 
     bool valid = false;
     while(!valid){
-        tcoords[0] = rand() % enemyGrid->getSize()-1;
-        tcoords[1] = rand() % enemyGrid->getSize()-1;
+        tcoords[0] = rand() % (enemyGrid->getSize()-1);
+        tcoords[1] = rand() % (enemyGrid->getSize()-1);
 
         if(!enemyGrid->getSpotAtCoords(tcoords).hit){
             valid = true;
@@ -83,18 +95,19 @@ vector<int> CPUController::getSmartCoordinates() {
             lcoords[1] = j;
 
             //If the CPU has previously hit, not missed, and the ship is still alive then...
+
             if(enemyGrid->getSpotAtCoords(lcoords).hit && !enemyGrid->getSpotAtCoords(lcoords).empty && !enemyGrid->getShipAtCoords(lcoords)->isSunk()){
                 for(int g = 0; g < 4; g++){
                     int alty = (g == 0) ? i+1 : (g == 1) ? i-1 : i;
                     int altx = (g == 2) ? j+1 : (g == 3) ? j-1 : j;
-
+                    tcoords[0] = alty;
+                    tcoords[1] = altx;
                     if (altx >= 0 && altx < gsize && alty >= 0 && alty < gsize){ //make sure its inbounds
-                        if(!enemyGrid->getSpotAtCoords(lcoords).hit){
+
+                        if(!enemyGrid->getSpotAtCoords(tcoords).hit){
                             //lets do it!
                             smart = true;
-                            tcoords[0] = alty;
-                            tcoords[1] = altx;
-                            break;
+                            return tcoords;
                         }
                     }
 
@@ -104,11 +117,8 @@ vector<int> CPUController::getSmartCoordinates() {
         }
     }
 
-    if(!smart){
-        return getRandomCoordinates();
-    }else{
-        return tcoords;
-    }
+
+    return getRandomCoordinates();
 
 }
 
@@ -121,11 +131,18 @@ vector<int> CPUController::getCheaterCoordinates() {
         tcoords[0] = i;
         for(int j = 0; j < gsize; j++){
             tcoords[1] = j;
-
+            try {
+                bool hex = enemyGrid->getSpotAtCoords(tcoords).empty;
+                bool hex2 = enemyGrid->getSpotAtCoords(tcoords).hit;
+            }catch (...){
+                cout << "hmmm" << endl;
+            }
             //Not empty? Isn't already hit? EZPZ.
-            if(!enemyGrid->getSpotAtCoords(tcoords).empty && !enemyGrid->getSpotAtCoords(tcoords).hit){
+            if(!(enemyGrid->getSpotAtCoords(tcoords).empty) && !(enemyGrid->getSpotAtCoords(tcoords).hit)){
                 return tcoords;
             }
         }
     }
+
+    throw "Out of...moves?";
 }

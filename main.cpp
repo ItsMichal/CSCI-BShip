@@ -12,9 +12,10 @@ int main() {
 
     game->runForever();
 
-    BShipGrid* grid = new BShipGrid();
-    grid->file_populate(&hecc);
-    cout << grid->displayFullGrid() << endl;
+    cout << "F" <<endl;
+    //BShipGrid* grid = new BShipGrid();
+    //grid->file_populate(&hecc);
+    //cout << grid->displayFullGrid() << endl;
 //    try {
 //        game->runForever();
 //    }catch (const exception e){

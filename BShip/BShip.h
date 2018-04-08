@@ -38,6 +38,7 @@ private:
 public:
     //Constructor
     BShip(string name, int _size, bool horizontal, vector<int> coords);
+    BShip() : BShip("", 0, false, (vector<int>(2,-1))){};
 
     //Setters
     void sink();
