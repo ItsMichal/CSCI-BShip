@@ -81,33 +81,9 @@ CMakeFiles/BShip.dir/main.cpp.o.provides: CMakeFiles/BShip.dir/main.cpp.o.requir
 CMakeFiles/BShip.dir/main.cpp.o.provides.build: CMakeFiles/BShip.dir/main.cpp.o
 
 
-CMakeFiles/BShip.dir/BShip/BShipGame.cpp.o: CMakeFiles/BShip.dir/flags.make
-CMakeFiles/BShip.dir/BShip/BShipGame.cpp.o: ../BShip/BShipGame.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/michal/CLionProjects/BShip/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/BShip.dir/BShip/BShipGame.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/BShip.dir/BShip/BShipGame.cpp.o -c /Users/michal/CLionProjects/BShip/BShip/BShipGame.cpp
-
-CMakeFiles/BShip.dir/BShip/BShipGame.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/BShip.dir/BShip/BShipGame.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/michal/CLionProjects/BShip/BShip/BShipGame.cpp > CMakeFiles/BShip.dir/BShip/BShipGame.cpp.i
-
-CMakeFiles/BShip.dir/BShip/BShipGame.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/BShip.dir/BShip/BShipGame.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/michal/CLionProjects/BShip/BShip/BShipGame.cpp -o CMakeFiles/BShip.dir/BShip/BShipGame.cpp.s
-
-CMakeFiles/BShip.dir/BShip/BShipGame.cpp.o.requires:
-
-.PHONY : CMakeFiles/BShip.dir/BShip/BShipGame.cpp.o.requires
-
-CMakeFiles/BShip.dir/BShip/BShipGame.cpp.o.provides: CMakeFiles/BShip.dir/BShip/BShipGame.cpp.o.requires
-	$(MAKE) -f CMakeFiles/BShip.dir/build.make CMakeFiles/BShip.dir/BShip/BShipGame.cpp.o.provides.build
-.PHONY : CMakeFiles/BShip.dir/BShip/BShipGame.cpp.o.provides
-
-CMakeFiles/BShip.dir/BShip/BShipGame.cpp.o.provides.build: CMakeFiles/BShip.dir/BShip/BShipGame.cpp.o
-
-
 CMakeFiles/BShip.dir/BShip/BShipGrid.cpp.o: CMakeFiles/BShip.dir/flags.make
 CMakeFiles/BShip.dir/BShip/BShipGrid.cpp.o: ../BShip/BShipGrid.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/michal/CLionProjects/BShip/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/BShip.dir/BShip/BShipGrid.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/michal/CLionProjects/BShip/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/BShip.dir/BShip/BShipGrid.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/BShip.dir/BShip/BShipGrid.cpp.o -c /Users/michal/CLionProjects/BShip/BShip/BShipGrid.cpp
 
 CMakeFiles/BShip.dir/BShip/BShipGrid.cpp.i: cmake_force
@@ -129,151 +105,19 @@ CMakeFiles/BShip.dir/BShip/BShipGrid.cpp.o.provides: CMakeFiles/BShip.dir/BShip/
 CMakeFiles/BShip.dir/BShip/BShipGrid.cpp.o.provides.build: CMakeFiles/BShip.dir/BShip/BShipGrid.cpp.o
 
 
-CMakeFiles/BShip.dir/BShip/BShip.cpp.o: CMakeFiles/BShip.dir/flags.make
-CMakeFiles/BShip.dir/BShip/BShip.cpp.o: ../BShip/BShip.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/michal/CLionProjects/BShip/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/BShip.dir/BShip/BShip.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/BShip.dir/BShip/BShip.cpp.o -c /Users/michal/CLionProjects/BShip/BShip/BShip.cpp
-
-CMakeFiles/BShip.dir/BShip/BShip.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/BShip.dir/BShip/BShip.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/michal/CLionProjects/BShip/BShip/BShip.cpp > CMakeFiles/BShip.dir/BShip/BShip.cpp.i
-
-CMakeFiles/BShip.dir/BShip/BShip.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/BShip.dir/BShip/BShip.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/michal/CLionProjects/BShip/BShip/BShip.cpp -o CMakeFiles/BShip.dir/BShip/BShip.cpp.s
-
-CMakeFiles/BShip.dir/BShip/BShip.cpp.o.requires:
-
-.PHONY : CMakeFiles/BShip.dir/BShip/BShip.cpp.o.requires
-
-CMakeFiles/BShip.dir/BShip/BShip.cpp.o.provides: CMakeFiles/BShip.dir/BShip/BShip.cpp.o.requires
-	$(MAKE) -f CMakeFiles/BShip.dir/build.make CMakeFiles/BShip.dir/BShip/BShip.cpp.o.provides.build
-.PHONY : CMakeFiles/BShip.dir/BShip/BShip.cpp.o.provides
-
-CMakeFiles/BShip.dir/BShip/BShip.cpp.o.provides.build: CMakeFiles/BShip.dir/BShip/BShip.cpp.o
-
-
-CMakeFiles/BShip.dir/BShip/BShipFacts.cpp.o: CMakeFiles/BShip.dir/flags.make
-CMakeFiles/BShip.dir/BShip/BShipFacts.cpp.o: ../BShip/BShipFacts.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/michal/CLionProjects/BShip/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/BShip.dir/BShip/BShipFacts.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/BShip.dir/BShip/BShipFacts.cpp.o -c /Users/michal/CLionProjects/BShip/BShip/BShipFacts.cpp
-
-CMakeFiles/BShip.dir/BShip/BShipFacts.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/BShip.dir/BShip/BShipFacts.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/michal/CLionProjects/BShip/BShip/BShipFacts.cpp > CMakeFiles/BShip.dir/BShip/BShipFacts.cpp.i
-
-CMakeFiles/BShip.dir/BShip/BShipFacts.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/BShip.dir/BShip/BShipFacts.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/michal/CLionProjects/BShip/BShip/BShipFacts.cpp -o CMakeFiles/BShip.dir/BShip/BShipFacts.cpp.s
-
-CMakeFiles/BShip.dir/BShip/BShipFacts.cpp.o.requires:
-
-.PHONY : CMakeFiles/BShip.dir/BShip/BShipFacts.cpp.o.requires
-
-CMakeFiles/BShip.dir/BShip/BShipFacts.cpp.o.provides: CMakeFiles/BShip.dir/BShip/BShipFacts.cpp.o.requires
-	$(MAKE) -f CMakeFiles/BShip.dir/build.make CMakeFiles/BShip.dir/BShip/BShipFacts.cpp.o.provides.build
-.PHONY : CMakeFiles/BShip.dir/BShip/BShipFacts.cpp.o.provides
-
-CMakeFiles/BShip.dir/BShip/BShipFacts.cpp.o.provides.build: CMakeFiles/BShip.dir/BShip/BShipFacts.cpp.o
-
-
-CMakeFiles/BShip.dir/BShip/BShipController.cpp.o: CMakeFiles/BShip.dir/flags.make
-CMakeFiles/BShip.dir/BShip/BShipController.cpp.o: ../BShip/BShipController.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/michal/CLionProjects/BShip/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/BShip.dir/BShip/BShipController.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/BShip.dir/BShip/BShipController.cpp.o -c /Users/michal/CLionProjects/BShip/BShip/BShipController.cpp
-
-CMakeFiles/BShip.dir/BShip/BShipController.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/BShip.dir/BShip/BShipController.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/michal/CLionProjects/BShip/BShip/BShipController.cpp > CMakeFiles/BShip.dir/BShip/BShipController.cpp.i
-
-CMakeFiles/BShip.dir/BShip/BShipController.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/BShip.dir/BShip/BShipController.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/michal/CLionProjects/BShip/BShip/BShipController.cpp -o CMakeFiles/BShip.dir/BShip/BShipController.cpp.s
-
-CMakeFiles/BShip.dir/BShip/BShipController.cpp.o.requires:
-
-.PHONY : CMakeFiles/BShip.dir/BShip/BShipController.cpp.o.requires
-
-CMakeFiles/BShip.dir/BShip/BShipController.cpp.o.provides: CMakeFiles/BShip.dir/BShip/BShipController.cpp.o.requires
-	$(MAKE) -f CMakeFiles/BShip.dir/build.make CMakeFiles/BShip.dir/BShip/BShipController.cpp.o.provides.build
-.PHONY : CMakeFiles/BShip.dir/BShip/BShipController.cpp.o.provides
-
-CMakeFiles/BShip.dir/BShip/BShipController.cpp.o.provides.build: CMakeFiles/BShip.dir/BShip/BShipController.cpp.o
-
-
-CMakeFiles/BShip.dir/BShip/UserController.cpp.o: CMakeFiles/BShip.dir/flags.make
-CMakeFiles/BShip.dir/BShip/UserController.cpp.o: ../BShip/UserController.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/michal/CLionProjects/BShip/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/BShip.dir/BShip/UserController.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/BShip.dir/BShip/UserController.cpp.o -c /Users/michal/CLionProjects/BShip/BShip/UserController.cpp
-
-CMakeFiles/BShip.dir/BShip/UserController.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/BShip.dir/BShip/UserController.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/michal/CLionProjects/BShip/BShip/UserController.cpp > CMakeFiles/BShip.dir/BShip/UserController.cpp.i
-
-CMakeFiles/BShip.dir/BShip/UserController.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/BShip.dir/BShip/UserController.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/michal/CLionProjects/BShip/BShip/UserController.cpp -o CMakeFiles/BShip.dir/BShip/UserController.cpp.s
-
-CMakeFiles/BShip.dir/BShip/UserController.cpp.o.requires:
-
-.PHONY : CMakeFiles/BShip.dir/BShip/UserController.cpp.o.requires
-
-CMakeFiles/BShip.dir/BShip/UserController.cpp.o.provides: CMakeFiles/BShip.dir/BShip/UserController.cpp.o.requires
-	$(MAKE) -f CMakeFiles/BShip.dir/build.make CMakeFiles/BShip.dir/BShip/UserController.cpp.o.provides.build
-.PHONY : CMakeFiles/BShip.dir/BShip/UserController.cpp.o.provides
-
-CMakeFiles/BShip.dir/BShip/UserController.cpp.o.provides.build: CMakeFiles/BShip.dir/BShip/UserController.cpp.o
-
-
-CMakeFiles/BShip.dir/BShip/CPUController.cpp.o: CMakeFiles/BShip.dir/flags.make
-CMakeFiles/BShip.dir/BShip/CPUController.cpp.o: ../BShip/CPUController.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/michal/CLionProjects/BShip/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/BShip.dir/BShip/CPUController.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/BShip.dir/BShip/CPUController.cpp.o -c /Users/michal/CLionProjects/BShip/BShip/CPUController.cpp
-
-CMakeFiles/BShip.dir/BShip/CPUController.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/BShip.dir/BShip/CPUController.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/michal/CLionProjects/BShip/BShip/CPUController.cpp > CMakeFiles/BShip.dir/BShip/CPUController.cpp.i
-
-CMakeFiles/BShip.dir/BShip/CPUController.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/BShip.dir/BShip/CPUController.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/michal/CLionProjects/BShip/BShip/CPUController.cpp -o CMakeFiles/BShip.dir/BShip/CPUController.cpp.s
-
-CMakeFiles/BShip.dir/BShip/CPUController.cpp.o.requires:
-
-.PHONY : CMakeFiles/BShip.dir/BShip/CPUController.cpp.o.requires
-
-CMakeFiles/BShip.dir/BShip/CPUController.cpp.o.provides: CMakeFiles/BShip.dir/BShip/CPUController.cpp.o.requires
-	$(MAKE) -f CMakeFiles/BShip.dir/build.make CMakeFiles/BShip.dir/BShip/CPUController.cpp.o.provides.build
-.PHONY : CMakeFiles/BShip.dir/BShip/CPUController.cpp.o.provides
-
-CMakeFiles/BShip.dir/BShip/CPUController.cpp.o.provides.build: CMakeFiles/BShip.dir/BShip/CPUController.cpp.o
-
-
 # Object files for target BShip
 BShip_OBJECTS = \
 "CMakeFiles/BShip.dir/main.cpp.o" \
-"CMakeFiles/BShip.dir/BShip/BShipGame.cpp.o" \
-"CMakeFiles/BShip.dir/BShip/BShipGrid.cpp.o" \
-"CMakeFiles/BShip.dir/BShip/BShip.cpp.o" \
-"CMakeFiles/BShip.dir/BShip/BShipFacts.cpp.o" \
-"CMakeFiles/BShip.dir/BShip/BShipController.cpp.o" \
-"CMakeFiles/BShip.dir/BShip/UserController.cpp.o" \
-"CMakeFiles/BShip.dir/BShip/CPUController.cpp.o"
+"CMakeFiles/BShip.dir/BShip/BShipGrid.cpp.o"
 
 # External object files for target BShip
 BShip_EXTERNAL_OBJECTS =
 
 BShip: CMakeFiles/BShip.dir/main.cpp.o
-BShip: CMakeFiles/BShip.dir/BShip/BShipGame.cpp.o
 BShip: CMakeFiles/BShip.dir/BShip/BShipGrid.cpp.o
-BShip: CMakeFiles/BShip.dir/BShip/BShip.cpp.o
-BShip: CMakeFiles/BShip.dir/BShip/BShipFacts.cpp.o
-BShip: CMakeFiles/BShip.dir/BShip/BShipController.cpp.o
-BShip: CMakeFiles/BShip.dir/BShip/UserController.cpp.o
-BShip: CMakeFiles/BShip.dir/BShip/CPUController.cpp.o
 BShip: CMakeFiles/BShip.dir/build.make
 BShip: CMakeFiles/BShip.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/michal/CLionProjects/BShip/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX executable BShip"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/michal/CLionProjects/BShip/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable BShip"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/BShip.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -282,13 +126,7 @@ CMakeFiles/BShip.dir/build: BShip
 .PHONY : CMakeFiles/BShip.dir/build
 
 CMakeFiles/BShip.dir/requires: CMakeFiles/BShip.dir/main.cpp.o.requires
-CMakeFiles/BShip.dir/requires: CMakeFiles/BShip.dir/BShip/BShipGame.cpp.o.requires
 CMakeFiles/BShip.dir/requires: CMakeFiles/BShip.dir/BShip/BShipGrid.cpp.o.requires
-CMakeFiles/BShip.dir/requires: CMakeFiles/BShip.dir/BShip/BShip.cpp.o.requires
-CMakeFiles/BShip.dir/requires: CMakeFiles/BShip.dir/BShip/BShipFacts.cpp.o.requires
-CMakeFiles/BShip.dir/requires: CMakeFiles/BShip.dir/BShip/BShipController.cpp.o.requires
-CMakeFiles/BShip.dir/requires: CMakeFiles/BShip.dir/BShip/UserController.cpp.o.requires
-CMakeFiles/BShip.dir/requires: CMakeFiles/BShip.dir/BShip/CPUController.cpp.o.requires
 
 .PHONY : CMakeFiles/BShip.dir/requires
 

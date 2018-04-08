@@ -6,8 +6,6 @@
 #define BSHIP_BSHIPCONTROLLER_H
 
 #include <vector>
-#include <BShipGame.h>
-#include <BShipGrid.h>
 #include "BShipGrid.h"
 
 using namespace std;

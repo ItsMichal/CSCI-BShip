@@ -7,27 +7,31 @@
 
 #include <string>
 #include <iostream>
+#include <fstream>
+#include <sstream>
+#include <map>
 #include <vector>
-#include "BShipGame.h"
+//#include "BShip.h"
+#include "BShipGridSpot.h"
 
-virtual struct BShipGridSpot;
 
 class BShipGrid {
 private:
 
     //The Game
-    BShipGame myController;
+    //BShipGame myController;
 
     //2D Vector to be used as grid
-    int size = 10; //side length of grid, maxes out at 20, minimum is 6, default is 10
+    int size; //side length of grid, maxes out at 20, minimum is 6, default is 10
     vector<vector<BShipGridSpot>> vectorGrid;
     vector<BShip> ships;
 
     bool checkCollision();
+    bool areSame(string x, string y);
+    int coordFromLetter(char x);
 
 public:
-    BShipGrid();
-    BShipGrid(int _size);
+    BShipGrid(int _size = 10);
 
     void file_populate(ifstream* finp);
     void rand_populate();
@@ -38,17 +42,12 @@ public:
     string displayGridNoShips();
     bool areAllSunk();
 
+    //BShip* hit(vector<int> coords);
+
     int getSize();
 };
 
 //Include struct for GridSpot here
 
-#include "BShip.h"
-
-virtual struct BShipGridSpot {
-    bool empty = true;
-    BShip motherShip;
-    bool hit = false;
-};
 
 #endif //BSHIP_BSHIPGRID_H

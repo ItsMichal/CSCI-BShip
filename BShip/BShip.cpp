@@ -3,3 +3,37 @@
 //
 
 #include "BShip.h"
+
+BShip::BShip(string name, int _size, bool horizontal, vector<int> coords) {
+    myName = name;
+    size = _size;
+    this->horizontal = horizontal;
+    this->coords = coords;
+}
+
+void BShip::sink() {
+    sunk = true;
+}
+
+void BShip::hit() {
+    hits+=1;
+    if(hits >= size){
+        sunk = true;
+    }
+}
+
+string BShip::getName() {
+    return myName;
+}
+
+bool BShip::isSunk() {
+    return sunk;
+}
+
+bool BShip::isHorizontal() {
+    return horizontal;
+}
+
+int BShip::getHits() {
+    return hits;
+}

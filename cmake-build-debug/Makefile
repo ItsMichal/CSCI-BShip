@@ -123,114 +123,6 @@ BShip/fast:
 	$(MAKE) -f CMakeFiles/BShip.dir/build.make CMakeFiles/BShip.dir/build
 .PHONY : BShip/fast
 
-BShip/BShip.o: BShip/BShip.cpp.o
-
-.PHONY : BShip/BShip.o
-
-# target to build an object file
-BShip/BShip.cpp.o:
-	$(MAKE) -f CMakeFiles/BShip.dir/build.make CMakeFiles/BShip.dir/BShip/BShip.cpp.o
-.PHONY : BShip/BShip.cpp.o
-
-BShip/BShip.i: BShip/BShip.cpp.i
-
-.PHONY : BShip/BShip.i
-
-# target to preprocess a source file
-BShip/BShip.cpp.i:
-	$(MAKE) -f CMakeFiles/BShip.dir/build.make CMakeFiles/BShip.dir/BShip/BShip.cpp.i
-.PHONY : BShip/BShip.cpp.i
-
-BShip/BShip.s: BShip/BShip.cpp.s
-
-.PHONY : BShip/BShip.s
-
-# target to generate assembly for a file
-BShip/BShip.cpp.s:
-	$(MAKE) -f CMakeFiles/BShip.dir/build.make CMakeFiles/BShip.dir/BShip/BShip.cpp.s
-.PHONY : BShip/BShip.cpp.s
-
-BShip/BShipController.o: BShip/BShipController.cpp.o
-
-.PHONY : BShip/BShipController.o
-
-# target to build an object file
-BShip/BShipController.cpp.o:
-	$(MAKE) -f CMakeFiles/BShip.dir/build.make CMakeFiles/BShip.dir/BShip/BShipController.cpp.o
-.PHONY : BShip/BShipController.cpp.o
-
-BShip/BShipController.i: BShip/BShipController.cpp.i
-
-.PHONY : BShip/BShipController.i
-
-# target to preprocess a source file
-BShip/BShipController.cpp.i:
-	$(MAKE) -f CMakeFiles/BShip.dir/build.make CMakeFiles/BShip.dir/BShip/BShipController.cpp.i
-.PHONY : BShip/BShipController.cpp.i
-
-BShip/BShipController.s: BShip/BShipController.cpp.s
-
-.PHONY : BShip/BShipController.s
-
-# target to generate assembly for a file
-BShip/BShipController.cpp.s:
-	$(MAKE) -f CMakeFiles/BShip.dir/build.make CMakeFiles/BShip.dir/BShip/BShipController.cpp.s
-.PHONY : BShip/BShipController.cpp.s
-
-BShip/BShipFacts.o: BShip/BShipFacts.cpp.o
-
-.PHONY : BShip/BShipFacts.o
-
-# target to build an object file
-BShip/BShipFacts.cpp.o:
-	$(MAKE) -f CMakeFiles/BShip.dir/build.make CMakeFiles/BShip.dir/BShip/BShipFacts.cpp.o
-.PHONY : BShip/BShipFacts.cpp.o
-
-BShip/BShipFacts.i: BShip/BShipFacts.cpp.i
-
-.PHONY : BShip/BShipFacts.i
-
-# target to preprocess a source file
-BShip/BShipFacts.cpp.i:
-	$(MAKE) -f CMakeFiles/BShip.dir/build.make CMakeFiles/BShip.dir/BShip/BShipFacts.cpp.i
-.PHONY : BShip/BShipFacts.cpp.i
-
-BShip/BShipFacts.s: BShip/BShipFacts.cpp.s
-
-.PHONY : BShip/BShipFacts.s
-
-# target to generate assembly for a file
-BShip/BShipFacts.cpp.s:
-	$(MAKE) -f CMakeFiles/BShip.dir/build.make CMakeFiles/BShip.dir/BShip/BShipFacts.cpp.s
-.PHONY : BShip/BShipFacts.cpp.s
-
-BShip/BShipGame.o: BShip/BShipGame.cpp.o
-
-.PHONY : BShip/BShipGame.o
-
-# target to build an object file
-BShip/BShipGame.cpp.o:
-	$(MAKE) -f CMakeFiles/BShip.dir/build.make CMakeFiles/BShip.dir/BShip/BShipGame.cpp.o
-.PHONY : BShip/BShipGame.cpp.o
-
-BShip/BShipGame.i: BShip/BShipGame.cpp.i
-
-.PHONY : BShip/BShipGame.i
-
-# target to preprocess a source file
-BShip/BShipGame.cpp.i:
-	$(MAKE) -f CMakeFiles/BShip.dir/build.make CMakeFiles/BShip.dir/BShip/BShipGame.cpp.i
-.PHONY : BShip/BShipGame.cpp.i
-
-BShip/BShipGame.s: BShip/BShipGame.cpp.s
-
-.PHONY : BShip/BShipGame.s
-
-# target to generate assembly for a file
-BShip/BShipGame.cpp.s:
-	$(MAKE) -f CMakeFiles/BShip.dir/build.make CMakeFiles/BShip.dir/BShip/BShipGame.cpp.s
-.PHONY : BShip/BShipGame.cpp.s
-
 BShip/BShipGrid.o: BShip/BShipGrid.cpp.o
 
 .PHONY : BShip/BShipGrid.o
@@ -257,60 +149,6 @@ BShip/BShipGrid.s: BShip/BShipGrid.cpp.s
 BShip/BShipGrid.cpp.s:
 	$(MAKE) -f CMakeFiles/BShip.dir/build.make CMakeFiles/BShip.dir/BShip/BShipGrid.cpp.s
 .PHONY : BShip/BShipGrid.cpp.s
-
-BShip/CPUController.o: BShip/CPUController.cpp.o
-
-.PHONY : BShip/CPUController.o
-
-# target to build an object file
-BShip/CPUController.cpp.o:
-	$(MAKE) -f CMakeFiles/BShip.dir/build.make CMakeFiles/BShip.dir/BShip/CPUController.cpp.o
-.PHONY : BShip/CPUController.cpp.o
-
-BShip/CPUController.i: BShip/CPUController.cpp.i
-
-.PHONY : BShip/CPUController.i
-
-# target to preprocess a source file
-BShip/CPUController.cpp.i:
-	$(MAKE) -f CMakeFiles/BShip.dir/build.make CMakeFiles/BShip.dir/BShip/CPUController.cpp.i
-.PHONY : BShip/CPUController.cpp.i
-
-BShip/CPUController.s: BShip/CPUController.cpp.s
-
-.PHONY : BShip/CPUController.s
-
-# target to generate assembly for a file
-BShip/CPUController.cpp.s:
-	$(MAKE) -f CMakeFiles/BShip.dir/build.make CMakeFiles/BShip.dir/BShip/CPUController.cpp.s
-.PHONY : BShip/CPUController.cpp.s
-
-BShip/UserController.o: BShip/UserController.cpp.o
-
-.PHONY : BShip/UserController.o
-
-# target to build an object file
-BShip/UserController.cpp.o:
-	$(MAKE) -f CMakeFiles/BShip.dir/build.make CMakeFiles/BShip.dir/BShip/UserController.cpp.o
-.PHONY : BShip/UserController.cpp.o
-
-BShip/UserController.i: BShip/UserController.cpp.i
-
-.PHONY : BShip/UserController.i
-
-# target to preprocess a source file
-BShip/UserController.cpp.i:
-	$(MAKE) -f CMakeFiles/BShip.dir/build.make CMakeFiles/BShip.dir/BShip/UserController.cpp.i
-.PHONY : BShip/UserController.cpp.i
-
-BShip/UserController.s: BShip/UserController.cpp.s
-
-.PHONY : BShip/UserController.s
-
-# target to generate assembly for a file
-BShip/UserController.cpp.s:
-	$(MAKE) -f CMakeFiles/BShip.dir/build.make CMakeFiles/BShip.dir/BShip/UserController.cpp.s
-.PHONY : BShip/UserController.cpp.s
 
 main.o: main.cpp.o
 
@@ -348,27 +186,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... BShip"
-	@echo "... BShip/BShip.o"
-	@echo "... BShip/BShip.i"
-	@echo "... BShip/BShip.s"
-	@echo "... BShip/BShipController.o"
-	@echo "... BShip/BShipController.i"
-	@echo "... BShip/BShipController.s"
-	@echo "... BShip/BShipFacts.o"
-	@echo "... BShip/BShipFacts.i"
-	@echo "... BShip/BShipFacts.s"
-	@echo "... BShip/BShipGame.o"
-	@echo "... BShip/BShipGame.i"
-	@echo "... BShip/BShipGame.s"
 	@echo "... BShip/BShipGrid.o"
 	@echo "... BShip/BShipGrid.i"
 	@echo "... BShip/BShipGrid.s"
-	@echo "... BShip/CPUController.o"
-	@echo "... BShip/CPUController.i"
-	@echo "... BShip/CPUController.s"
-	@echo "... BShip/UserController.o"
-	@echo "... BShip/UserController.i"
-	@echo "... BShip/UserController.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

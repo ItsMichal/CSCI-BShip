@@ -7,14 +7,14 @@
 
 #include <string>
 #include <vector>
-#include "BShipGrid.h"
+
 
 using namespace std;
 
 class BShip {
 private:
     //Mother grid object
-    BShipGrid grid;
+    //virtual BShipGrid grid;
 
     //Is sunk?
     bool sunk = false;
@@ -28,26 +28,26 @@ private:
     //starting coordinates in the grid
     vector<int> coords;
 
-    //vector of ship parts
-    vector<BShipGridSpot> shipLine;
+    //tracks how many times its been hit
+    int hits=0;
 
     //name
     string myName;
 
-    //name database
-    //const string nameDB[5] = {"Destroyer", "Submarine", "Cruiser", "Battleship", "Carrier"};
 
 public:
     //Constructor
-    BShip(BShipGrid _grid, int name, int _size, bool horizontal, vector<int> coords);
+    BShip(string name, int _size, bool horizontal, vector<int> coords);
 
     //Setters
     void sink();
+    void hit();
 
     //Getters
+    string getName();
     bool isSunk();
     bool isHorizontal();
-    vector<BShipGridSpot> getGridSpots();
+    int getHits();
 };
 
 

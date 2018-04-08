@@ -8,10 +8,11 @@
 #include <iostream>
 #include <fstream>
 #include <string>
+
+#include "BShipGrid.h"
 #include "BShipController.h"
 #include "UserController.h"
-#include "CPUController.h
-#include "BShipGrid.h"
+#include "CPUController.h"
 #include "BShipFacts.h"
 
 using namespace std;
@@ -62,7 +63,7 @@ public:
 
     bool setup(); //run setup
     bool run(); //Have this class run the game.
-
+    bool runForever(); //f o r e v e r
 };
 
 

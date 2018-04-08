@@ -1,12 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/BShip.dir/main.cpp.o"
-  "CMakeFiles/BShip.dir/BShip/BShipGame.cpp.o"
   "CMakeFiles/BShip.dir/BShip/BShipGrid.cpp.o"
-  "CMakeFiles/BShip.dir/BShip/BShip.cpp.o"
-  "CMakeFiles/BShip.dir/BShip/BShipFacts.cpp.o"
-  "CMakeFiles/BShip.dir/BShip/BShipController.cpp.o"
-  "CMakeFiles/BShip.dir/BShip/UserController.cpp.o"
-  "CMakeFiles/BShip.dir/BShip/CPUController.cpp.o"
   "BShip.pdb"
   "BShip"
 )
