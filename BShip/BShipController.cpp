@@ -8,5 +8,5 @@
 BShipController::BShipController(BShipGrid *_myGrid, BShipGrid *_enemyGrid) {
     myGrid = _myGrid;
     enemyGrid = _enemyGrid;
-    nextCoordinates(2,0);
+    nextCoordinates = *(new vector<int>(2,0));
 }

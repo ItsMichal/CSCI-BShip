@@ -26,7 +26,7 @@ bool CPUController::setDifficulty(int d) {
     }
 }
 
-virtual vector<int> CPUController::getNextCoordinates() final {
+vector<int> CPUController::getNextCoordinates() {
     if(difficulty == 0 || difficulty == 2){
         if(rand() % 2 == 0){
             return getRandomCoordinates();
@@ -53,13 +53,79 @@ vector<int> CPUController::getRandomCoordinates() {
 
     bool valid = false;
     while(!valid){
-        tcoords[0] = rand() % enemyGrid.getSize()-1;
-        tcoords[1] = rand() % enemyGrid.getSize()-1;
+        tcoords[0] = rand() % enemyGrid->getSize()-1;
+        tcoords[1] = rand() % enemyGrid->getSize()-1;
 
-        if(!enemyGrid){
+        if(!enemyGrid->getSpotAtCoords(tcoords).hit){
             valid = true;
         }
     }
 
     return tcoords;
+}
+
+
+//By basic logic, if you have hit but not sunken a ship, that must mean one of the adjacent tiles
+//must contain another part of said ship. This code establishes that logic which allows the CPU
+//to use that tactic. If there are no "half-sunken" ships, it will randomly fire until it achieves
+//a hit.
+vector<int> CPUController::getSmartCoordinates() {
+    vector<int> tcoords(2,0); //temp coords
+    const int gsize = enemyGrid->getSize(); //grid size
+
+    bool smart = false; //did it do the smart thing?
+
+    vector<int> lcoords(2,0); //probably not necessary, but oh well (lookup coords)
+
+    for(int i = 0; i < gsize; i++){
+        lcoords[0] = i;
+        for(int j = 0; j < gsize; j++){
+            lcoords[1] = j;
+
+            //If the CPU has previously hit, not missed, and the ship is still alive then...
+            if(enemyGrid->getSpotAtCoords(lcoords).hit && !enemyGrid->getSpotAtCoords(lcoords).empty && !enemyGrid->getShipAtCoords(lcoords)->isSunk()){
+                for(int g = 0; g < 4; g++){
+                    int alty = (g == 0) ? i+1 : (g == 1) ? i-1 : i;
+                    int altx = (g == 2) ? j+1 : (g == 3) ? j-1 : j;
+
+                    if (altx >= 0 && altx < gsize && alty >= 0 && alty < gsize){ //make sure its inbounds
+                        if(!enemyGrid->getSpotAtCoords(lcoords).hit){
+                            //lets do it!
+                            smart = true;
+                            tcoords[0] = alty;
+                            tcoords[1] = altx;
+                            break;
+                        }
+                    }
+
+                }
+            }
+
+        }
+    }
+
+    if(!smart){
+        return getRandomCoordinates();
+    }else{
+        return tcoords;
+    }
+
+}
+
+//Blatantly looks up the other players board and picks a guaranteed target
+vector<int> CPUController::getCheaterCoordinates() {
+    vector<int> tcoords(2,0); //temp coords
+    const int gsize = enemyGrid->getSize(); //grid size
+
+    for(int i = 0; i < gsize; i++){
+        tcoords[0] = i;
+        for(int j = 0; j < gsize; j++){
+            tcoords[1] = j;
+
+            //Not empty? Isn't already hit? EZPZ.
+            if(!enemyGrid->getSpotAtCoords(tcoords).empty && !enemyGrid->getSpotAtCoords(tcoords).hit){
+                return tcoords;
+            }
+        }
+    }
 }

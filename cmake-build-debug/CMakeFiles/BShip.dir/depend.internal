@@ -4,13 +4,41 @@
 CMakeFiles/BShip.dir/BShip/BShip.cpp.o
  /Users/michal/CLionProjects/BShip/BShip/BShip.cpp
  /Users/michal/CLionProjects/BShip/BShip/BShip.h
+CMakeFiles/BShip.dir/BShip/BShipController.cpp.o
+ /Users/michal/CLionProjects/BShip/BShip/BShip.h
+ /Users/michal/CLionProjects/BShip/BShip/BShipController.cpp
+ /Users/michal/CLionProjects/BShip/BShip/BShipController.h
+ /Users/michal/CLionProjects/BShip/BShip/BShipGrid.h
+ /Users/michal/CLionProjects/BShip/BShip/BShipGridSpot.h
+CMakeFiles/BShip.dir/BShip/BShipGame.cpp.o
+ /Users/michal/CLionProjects/BShip/BShip/BShip.h
+ /Users/michal/CLionProjects/BShip/BShip/BShipController.h
+ /Users/michal/CLionProjects/BShip/BShip/BShipFacts.h
+ /Users/michal/CLionProjects/BShip/BShip/BShipGame.cpp
+ /Users/michal/CLionProjects/BShip/BShip/BShipGame.h
+ /Users/michal/CLionProjects/BShip/BShip/BShipGrid.h
+ /Users/michal/CLionProjects/BShip/BShip/BShipGridSpot.h
+ /Users/michal/CLionProjects/BShip/BShip/CPUController.h
+ /Users/michal/CLionProjects/BShip/BShip/UserController.h
 CMakeFiles/BShip.dir/BShip/BShipGrid.cpp.o
  /Users/michal/CLionProjects/BShip/BShip/BShip.h
  /Users/michal/CLionProjects/BShip/BShip/BShipGrid.cpp
  /Users/michal/CLionProjects/BShip/BShip/BShipGrid.h
  /Users/michal/CLionProjects/BShip/BShip/BShipGridSpot.h
-CMakeFiles/BShip.dir/main.cpp.o
+CMakeFiles/BShip.dir/BShip/CPUController.cpp.o
  /Users/michal/CLionProjects/BShip/BShip/BShip.h
+ /Users/michal/CLionProjects/BShip/BShip/BShipController.h
  /Users/michal/CLionProjects/BShip/BShip/BShipGrid.h
  /Users/michal/CLionProjects/BShip/BShip/BShipGridSpot.h
+ /Users/michal/CLionProjects/BShip/BShip/CPUController.cpp
+ /Users/michal/CLionProjects/BShip/BShip/CPUController.h
+CMakeFiles/BShip.dir/main.cpp.o
+ /Users/michal/CLionProjects/BShip/BShip/BShip.h
+ /Users/michal/CLionProjects/BShip/BShip/BShipController.h
+ /Users/michal/CLionProjects/BShip/BShip/BShipFacts.h
+ /Users/michal/CLionProjects/BShip/BShip/BShipGame.h
+ /Users/michal/CLionProjects/BShip/BShip/BShipGrid.h
+ /Users/michal/CLionProjects/BShip/BShip/BShipGridSpot.h
+ /Users/michal/CLionProjects/BShip/BShip/CPUController.h
+ /Users/michal/CLionProjects/BShip/BShip/UserController.h
  /Users/michal/CLionProjects/BShip/main.cpp

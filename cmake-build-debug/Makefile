@@ -150,6 +150,60 @@ BShip/BShip.cpp.s:
 	$(MAKE) -f CMakeFiles/BShip.dir/build.make CMakeFiles/BShip.dir/BShip/BShip.cpp.s
 .PHONY : BShip/BShip.cpp.s
 
+BShip/BShipController.o: BShip/BShipController.cpp.o
+
+.PHONY : BShip/BShipController.o
+
+# target to build an object file
+BShip/BShipController.cpp.o:
+	$(MAKE) -f CMakeFiles/BShip.dir/build.make CMakeFiles/BShip.dir/BShip/BShipController.cpp.o
+.PHONY : BShip/BShipController.cpp.o
+
+BShip/BShipController.i: BShip/BShipController.cpp.i
+
+.PHONY : BShip/BShipController.i
+
+# target to preprocess a source file
+BShip/BShipController.cpp.i:
+	$(MAKE) -f CMakeFiles/BShip.dir/build.make CMakeFiles/BShip.dir/BShip/BShipController.cpp.i
+.PHONY : BShip/BShipController.cpp.i
+
+BShip/BShipController.s: BShip/BShipController.cpp.s
+
+.PHONY : BShip/BShipController.s
+
+# target to generate assembly for a file
+BShip/BShipController.cpp.s:
+	$(MAKE) -f CMakeFiles/BShip.dir/build.make CMakeFiles/BShip.dir/BShip/BShipController.cpp.s
+.PHONY : BShip/BShipController.cpp.s
+
+BShip/BShipGame.o: BShip/BShipGame.cpp.o
+
+.PHONY : BShip/BShipGame.o
+
+# target to build an object file
+BShip/BShipGame.cpp.o:
+	$(MAKE) -f CMakeFiles/BShip.dir/build.make CMakeFiles/BShip.dir/BShip/BShipGame.cpp.o
+.PHONY : BShip/BShipGame.cpp.o
+
+BShip/BShipGame.i: BShip/BShipGame.cpp.i
+
+.PHONY : BShip/BShipGame.i
+
+# target to preprocess a source file
+BShip/BShipGame.cpp.i:
+	$(MAKE) -f CMakeFiles/BShip.dir/build.make CMakeFiles/BShip.dir/BShip/BShipGame.cpp.i
+.PHONY : BShip/BShipGame.cpp.i
+
+BShip/BShipGame.s: BShip/BShipGame.cpp.s
+
+.PHONY : BShip/BShipGame.s
+
+# target to generate assembly for a file
+BShip/BShipGame.cpp.s:
+	$(MAKE) -f CMakeFiles/BShip.dir/build.make CMakeFiles/BShip.dir/BShip/BShipGame.cpp.s
+.PHONY : BShip/BShipGame.cpp.s
+
 BShip/BShipGrid.o: BShip/BShipGrid.cpp.o
 
 .PHONY : BShip/BShipGrid.o
@@ -176,6 +230,33 @@ BShip/BShipGrid.s: BShip/BShipGrid.cpp.s
 BShip/BShipGrid.cpp.s:
 	$(MAKE) -f CMakeFiles/BShip.dir/build.make CMakeFiles/BShip.dir/BShip/BShipGrid.cpp.s
 .PHONY : BShip/BShipGrid.cpp.s
+
+BShip/CPUController.o: BShip/CPUController.cpp.o
+
+.PHONY : BShip/CPUController.o
+
+# target to build an object file
+BShip/CPUController.cpp.o:
+	$(MAKE) -f CMakeFiles/BShip.dir/build.make CMakeFiles/BShip.dir/BShip/CPUController.cpp.o
+.PHONY : BShip/CPUController.cpp.o
+
+BShip/CPUController.i: BShip/CPUController.cpp.i
+
+.PHONY : BShip/CPUController.i
+
+# target to preprocess a source file
+BShip/CPUController.cpp.i:
+	$(MAKE) -f CMakeFiles/BShip.dir/build.make CMakeFiles/BShip.dir/BShip/CPUController.cpp.i
+.PHONY : BShip/CPUController.cpp.i
+
+BShip/CPUController.s: BShip/CPUController.cpp.s
+
+.PHONY : BShip/CPUController.s
+
+# target to generate assembly for a file
+BShip/CPUController.cpp.s:
+	$(MAKE) -f CMakeFiles/BShip.dir/build.make CMakeFiles/BShip.dir/BShip/CPUController.cpp.s
+.PHONY : BShip/CPUController.cpp.s
 
 main.o: main.cpp.o
 
@@ -216,9 +297,18 @@ help:
 	@echo "... BShip/BShip.o"
 	@echo "... BShip/BShip.i"
 	@echo "... BShip/BShip.s"
+	@echo "... BShip/BShipController.o"
+	@echo "... BShip/BShipController.i"
+	@echo "... BShip/BShipController.s"
+	@echo "... BShip/BShipGame.o"
+	@echo "... BShip/BShipGame.i"
+	@echo "... BShip/BShipGame.s"
 	@echo "... BShip/BShipGrid.o"
 	@echo "... BShip/BShipGrid.i"
 	@echo "... BShip/BShipGrid.s"
+	@echo "... BShip/CPUController.o"
+	@echo "... BShip/CPUController.i"
+	@echo "... BShip/CPUController.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

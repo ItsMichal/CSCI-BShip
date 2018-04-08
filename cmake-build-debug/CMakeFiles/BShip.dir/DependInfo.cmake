@@ -5,7 +5,10 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
   "/Users/michal/CLionProjects/BShip/BShip/BShip.cpp" "/Users/michal/CLionProjects/BShip/cmake-build-debug/CMakeFiles/BShip.dir/BShip/BShip.cpp.o"
+  "/Users/michal/CLionProjects/BShip/BShip/BShipController.cpp" "/Users/michal/CLionProjects/BShip/cmake-build-debug/CMakeFiles/BShip.dir/BShip/BShipController.cpp.o"
+  "/Users/michal/CLionProjects/BShip/BShip/BShipGame.cpp" "/Users/michal/CLionProjects/BShip/cmake-build-debug/CMakeFiles/BShip.dir/BShip/BShipGame.cpp.o"
   "/Users/michal/CLionProjects/BShip/BShip/BShipGrid.cpp" "/Users/michal/CLionProjects/BShip/cmake-build-debug/CMakeFiles/BShip.dir/BShip/BShipGrid.cpp.o"
+  "/Users/michal/CLionProjects/BShip/BShip/CPUController.cpp" "/Users/michal/CLionProjects/BShip/cmake-build-debug/CMakeFiles/BShip.dir/BShip/CPUController.cpp.o"
   "/Users/michal/CLionProjects/BShip/main.cpp" "/Users/michal/CLionProjects/BShip/cmake-build-debug/CMakeFiles/BShip.dir/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "AppleClang")
