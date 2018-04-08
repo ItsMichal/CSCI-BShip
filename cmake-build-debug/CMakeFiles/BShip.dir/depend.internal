@@ -32,6 +32,13 @@ CMakeFiles/BShip.dir/BShip/CPUController.cpp.o
  /Users/michal/CLionProjects/BShip/BShip/BShipGridSpot.h
  /Users/michal/CLionProjects/BShip/BShip/CPUController.cpp
  /Users/michal/CLionProjects/BShip/BShip/CPUController.h
+CMakeFiles/BShip.dir/BShip/UserController.cpp.o
+ /Users/michal/CLionProjects/BShip/BShip/BShip.h
+ /Users/michal/CLionProjects/BShip/BShip/BShipController.h
+ /Users/michal/CLionProjects/BShip/BShip/BShipGrid.h
+ /Users/michal/CLionProjects/BShip/BShip/BShipGridSpot.h
+ /Users/michal/CLionProjects/BShip/BShip/UserController.cpp
+ /Users/michal/CLionProjects/BShip/BShip/UserController.h
 CMakeFiles/BShip.dir/main.cpp.o
  /Users/michal/CLionProjects/BShip/BShip/BShip.h
  /Users/michal/CLionProjects/BShip/BShip/BShipController.h

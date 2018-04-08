@@ -45,10 +45,18 @@ private:
     bool gameRunning = false;
     bool gameFinished = false;
     const string welcomeMessage = "Welcome to Michal's BShip Game!";
-    const string instructionMessage = "-Press Q at any time to quit the game."
-            "\n-X = Miss, O = Hit."
+    const string instructionMessage = "-Enter Q at any time to quit the game."
+            "\n-0 = Miss, X = Hit."
             "\n-When it's your turn, enter coordinates in the format '(Letter)(Number)', i.e. 'A1'"
             "\n-Game ends when one or the other ships are sunk!";
+    const string menuStrings[5] = {
+            "View Instructions",
+            "Set Difficulty",
+            "Set new Ship File",
+            "Play",
+            "Quit"
+    };
+
 
 public:
 
@@ -60,6 +68,10 @@ public:
     //Game Logic
     string welcome(); //display welcome message
     string instructions(); //display instructions message
+    string displayMenu(); //display the menu
+
+    int getValidInput(int max, int min =1); //returns a valid menu option
+    void setNewFileFromInput(); //sets a new finp from inp
 
     bool setup(); //run setup
     bool run(); //Have this class run the game.

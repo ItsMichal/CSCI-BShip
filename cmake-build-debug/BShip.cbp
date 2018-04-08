@@ -113,6 +113,12 @@
 		<Unit filename="/Users/michal/CLionProjects/BShip/BShip/CPUController.h">
 			<Option target="BShip"/>
 		</Unit>
+		<Unit filename="/Users/michal/CLionProjects/BShip/BShip/UserController.cpp">
+			<Option target="BShip"/>
+		</Unit>
+		<Unit filename="/Users/michal/CLionProjects/BShip/BShip/UserController.h">
+			<Option target="BShip"/>
+		</Unit>
 		<Unit filename="/Users/michal/CLionProjects/BShip/main.cpp">
 			<Option target="BShip"/>
 		</Unit>

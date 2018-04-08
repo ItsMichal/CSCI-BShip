@@ -258,6 +258,33 @@ BShip/CPUController.cpp.s:
 	$(MAKE) -f CMakeFiles/BShip.dir/build.make CMakeFiles/BShip.dir/BShip/CPUController.cpp.s
 .PHONY : BShip/CPUController.cpp.s
 
+BShip/UserController.o: BShip/UserController.cpp.o
+
+.PHONY : BShip/UserController.o
+
+# target to build an object file
+BShip/UserController.cpp.o:
+	$(MAKE) -f CMakeFiles/BShip.dir/build.make CMakeFiles/BShip.dir/BShip/UserController.cpp.o
+.PHONY : BShip/UserController.cpp.o
+
+BShip/UserController.i: BShip/UserController.cpp.i
+
+.PHONY : BShip/UserController.i
+
+# target to preprocess a source file
+BShip/UserController.cpp.i:
+	$(MAKE) -f CMakeFiles/BShip.dir/build.make CMakeFiles/BShip.dir/BShip/UserController.cpp.i
+.PHONY : BShip/UserController.cpp.i
+
+BShip/UserController.s: BShip/UserController.cpp.s
+
+.PHONY : BShip/UserController.s
+
+# target to generate assembly for a file
+BShip/UserController.cpp.s:
+	$(MAKE) -f CMakeFiles/BShip.dir/build.make CMakeFiles/BShip.dir/BShip/UserController.cpp.s
+.PHONY : BShip/UserController.cpp.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -309,6 +336,9 @@ help:
 	@echo "... BShip/CPUController.o"
 	@echo "... BShip/CPUController.i"
 	@echo "... BShip/CPUController.s"
+	@echo "... BShip/UserController.o"
+	@echo "... BShip/UserController.i"
+	@echo "... BShip/UserController.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

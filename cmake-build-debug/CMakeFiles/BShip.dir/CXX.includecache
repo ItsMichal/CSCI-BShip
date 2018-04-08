@@ -31,10 +31,6 @@ BShipGrid.h
 /Users/michal/CLionProjects/BShip/BShip/BShipGame.cpp
 BShipGame.h
 /Users/michal/CLionProjects/BShip/BShip/BShipGame.h
-chrono
--
-thread
--
 
 /Users/michal/CLionProjects/BShip/BShip/BShipGame.h
 iostream
@@ -98,8 +94,14 @@ ctime
 BShipController.h
 /Users/michal/CLionProjects/BShip/BShip/BShipController.h
 
+/Users/michal/CLionProjects/BShip/BShip/UserController.cpp
+UserController.h
+/Users/michal/CLionProjects/BShip/BShip/UserController.h
+
 /Users/michal/CLionProjects/BShip/BShip/UserController.h
 iostream
+-
+string
 -
 BShipController.h
 /Users/michal/CLionProjects/BShip/BShip/BShipController.h

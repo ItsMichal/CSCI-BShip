@@ -13,20 +13,25 @@
   <component name="ChangeListManager">
     <list default="true" id="95706024-ebc9-4550-960c-b4940577502d" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/BShip/BShip.h" afterPath="$PROJECT_DIR$/BShip/BShip.h" />
       <change beforePath="$PROJECT_DIR$/BShip/BShipGame.cpp" afterPath="$PROJECT_DIR$/BShip/BShipGame.cpp" />
-      <change beforePath="$PROJECT_DIR$/BShip/BShipGrid.cpp" afterPath="$PROJECT_DIR$/BShip/BShipGrid.cpp" />
-      <change beforePath="$PROJECT_DIR$/BShip/BShipGrid.h" afterPath="$PROJECT_DIR$/BShip/BShipGrid.h" />
-      <change beforePath="$PROJECT_DIR$/BShip/CPUController.cpp" afterPath="$PROJECT_DIR$/BShip/CPUController.cpp" />
-      <change beforePath="$PROJECT_DIR$/BShip/CPUController.h" afterPath="$PROJECT_DIR$/BShip/CPUController.h" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/BShip" afterPath="$PROJECT_DIR$/cmake-build-debug/BShip" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/BShip.dir/BShip/BShip.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/BShip.dir/BShip/BShip.cpp.o" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/BShip.dir/BShip/BShipController.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/BShip.dir/BShip/BShipController.cpp.o" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/BShip.dir/BShip/BShipGame.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/BShip.dir/BShip/BShipGame.cpp.o" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/BShip.dir/BShip/BShipGrid.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/BShip.dir/BShip/BShipGrid.cpp.o" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/BShip.dir/BShip/CPUController.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/BShip.dir/BShip/CPUController.cpp.o" />
+      <change beforePath="$PROJECT_DIR$/BShip/BShipGame.h" afterPath="$PROJECT_DIR$/BShip/BShipGame.h" />
+      <change beforePath="$PROJECT_DIR$/BShip/UserController.cpp" afterPath="$PROJECT_DIR$/BShip/UserController.cpp" />
+      <change beforePath="$PROJECT_DIR$/BShip/UserController.h" afterPath="$PROJECT_DIR$/BShip/UserController.h" />
+      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" afterPath="$PROJECT_DIR$/CMakeLists.txt" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/BShip.cbp" afterPath="$PROJECT_DIR$/cmake-build-debug/BShip.cbp" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/BShip.dir/BShip/BShipGame.cpp.o" afterPath="" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/BShip.dir/CXX.includecache" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/BShip.dir/CXX.includecache" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/BShip.dir/main.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/BShip.dir/main.cpp.o" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/BShip.dir/DependInfo.cmake" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/BShip.dir/DependInfo.cmake" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/BShip.dir/build.make" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/BShip.dir/build.make" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/BShip.dir/cmake_clean.cmake" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/BShip.dir/cmake_clean.cmake" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/BShip.dir/depend.internal" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/BShip.dir/depend.internal" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/BShip.dir/depend.make" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/BShip.dir/depend.make" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/BShip.dir/link.txt" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/BShip.dir/link.txt" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/BShip.dir/main.cpp.o" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/BShip.dir/progress.make" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/BShip.dir/progress.make" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" />
       <change beforePath="$PROJECT_DIR$/main.cpp" afterPath="$PROJECT_DIR$/main.cpp" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
@@ -39,17 +44,27 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.44819465">
+    <splitter split-orientation="horizontal" split-proportion="0.3587127">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file leaf-file-name="BShipController.h" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/BShip/BShipController.h">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="0">
+                <state relative-caret-position="210">
                   <caret line="14" column="31" lean-forward="false" selection-start-line="14" selection-start-column="31" selection-end-line="14" selection-end-column="31" />
                   <folding>
                     <element signature="e#117#134#0" expanded="true" />
                   </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="BShipGame.cpp" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/BShip/BShipGame.cpp">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="180">
+                  <caret line="38" column="20" lean-forward="false" selection-start-line="38" selection-start-column="20" selection-end-line="38" selection-end-column="20" />
+                  <folding />
                 </state>
               </provider>
             </entry>
@@ -64,21 +79,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="UserController.cpp" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/BShip/UserController.cpp">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="0">
-                  <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="BShipGrid.cpp" pinned="false" current-in-tab="false">
+          <file leaf-file-name="BShipGrid.cpp" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/BShip/BShipGrid.cpp">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="243">
-                  <caret line="335" column="0" lean-forward="false" selection-start-line="335" selection-start-column="0" selection-end-line="335" selection-end-column="0" />
+                <state relative-caret-position="60">
+                  <caret line="189" column="0" lean-forward="true" selection-start-line="189" selection-start-column="0" selection-end-line="201" selection-end-column="1" />
                   <folding />
                 </state>
               </provider>
@@ -96,11 +101,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="BShipGame.h" pinned="false" current-in-tab="true">
+          <file leaf-file-name="BShipGame.h" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/BShip/BShipGame.h">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="162">
-                  <caret line="32" column="9" lean-forward="false" selection-start-line="32" selection-start-column="9" selection-end-line="32" selection-end-column="9" />
+                <state relative-caret-position="359">
+                  <caret line="51" column="30" lean-forward="false" selection-start-line="51" selection-start-column="30" selection-end-line="51" selection-end-column="30" />
                   <folding>
                     <element signature="e#105#124#0" expanded="true" />
                   </folding>
@@ -128,12 +133,26 @@
               </provider>
             </entry>
           </file>
+          <file leaf-file-name="CPUController.h" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/BShip/CPUController.h">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="360">
+                  <caret line="24" column="30" lean-forward="true" selection-start-line="24" selection-start-column="30" selection-end-line="24" selection-end-column="30" />
+                  <folding>
+                    <element signature="e#113#132#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
           <file leaf-file-name="UserController.h" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/BShip/UserController.h">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="210">
-                  <caret line="14" column="49" lean-forward="false" selection-start-line="14" selection-start-column="49" selection-end-line="14" selection-end-column="49" />
-                  <folding />
+                <state relative-caret-position="225">
+                  <caret line="15" column="32" lean-forward="false" selection-start-line="15" selection-start-column="32" selection-end-line="15" selection-end-column="32" />
+                  <folding>
+                    <element signature="e#115#134#0" expanded="true" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -142,6 +161,16 @@
       </split-first>
       <split-second>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file leaf-file-name="UserController.cpp" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/BShip/UserController.cpp">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="132">
+                  <caret line="23" column="83" lean-forward="false" selection-start-line="23" selection-start-column="83" selection-end-line="23" selection-end-column="83" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
           <file leaf-file-name="BShip.cpp" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/BShip/BShip.cpp">
               <provider selected="true" editor-type-id="text-editor">
@@ -152,23 +181,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="BShipGame.cpp" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/BShip/BShipGame.cpp">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="325">
-                  <caret line="42" column="65" lean-forward="false" selection-start-line="42" selection-start-column="65" selection-end-line="42" selection-end-column="65" />
-                  <folding>
-                    <element signature="e#52#74#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
           <file leaf-file-name="CMakeLists.txt" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="75">
-                  <caret line="5" column="30" lean-forward="false" selection-start-line="5" selection-start-column="30" selection-end-line="5" selection-end-column="30" />
+                  <caret line="5" column="278" lean-forward="false" selection-start-line="5" selection-start-column="278" selection-end-line="5" selection-end-column="278" />
                   <folding />
                 </state>
               </provider>
@@ -178,7 +195,7 @@
             <entry file="file://$PROJECT_DIR$/main.cpp">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="210">
-                  <caret line="14" column="23" lean-forward="false" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="23" />
+                  <caret line="14" column="53" lean-forward="true" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="53" />
                   <folding>
                     <element signature="e#0#18#0" expanded="true" />
                   </folding>
@@ -199,8 +216,8 @@
           <file leaf-file-name="BShipGrid.h" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/BShip/BShipGrid.h">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-43">
-                  <caret line="29" column="0" lean-forward="true" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+                <state relative-caret-position="99">
+                  <caret line="32" column="4" lean-forward="true" selection-start-line="32" selection-start-column="4" selection-end-line="32" selection-end-column="32" />
                   <folding>
                     <element signature="e#105#122#0" expanded="true" />
                   </folding>
@@ -228,18 +245,6 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="CPUController.h" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/BShip/CPUController.h">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="210">
-                  <caret line="14" column="252" lean-forward="false" selection-start-line="14" selection-start-column="252" selection-end-line="14" selection-end-column="252" />
-                  <folding>
-                    <element signature="e#113#132#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
         </leaf>
       </split-second>
     </splitter>
@@ -257,22 +262,23 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/BShipGame.h" />
-        <option value="$PROJECT_DIR$/BShip/UserController.h" />
         <option value="$PROJECT_DIR$/BShip/BShipGridSpot.h" />
         <option value="$PROJECT_DIR$/BShip/BShip.cpp" />
         <option value="$PROJECT_DIR$/cmake-build-debug/ship_placement.csv" />
         <option value="$PROJECT_DIR$/BShip/BShipController.h" />
         <option value="$PROJECT_DIR$/cmake-build-debug/ship_placement2.csv" />
-        <option value="$PROJECT_DIR$/CMakeLists.txt" />
         <option value="$PROJECT_DIR$/BShip/BShipController.cpp" />
         <option value="$PROJECT_DIR$/BShip/BShip.h" />
-        <option value="$PROJECT_DIR$/main.cpp" />
-        <option value="$PROJECT_DIR$/BShip/BShipGame.h" />
         <option value="$PROJECT_DIR$/BShip/BShipGrid.h" />
         <option value="$PROJECT_DIR$/BShip/BShipGrid.cpp" />
         <option value="$PROJECT_DIR$/BShip/CPUController.h" />
         <option value="$PROJECT_DIR$/BShip/CPUController.cpp" />
+        <option value="$PROJECT_DIR$/CMakeLists.txt" />
+        <option value="$PROJECT_DIR$/BShip/BShipGame.h" />
+        <option value="$PROJECT_DIR$/main.cpp" />
         <option value="$PROJECT_DIR$/BShip/BShipGame.cpp" />
+        <option value="$PROJECT_DIR$/BShip/UserController.h" />
+        <option value="$PROJECT_DIR$/BShip/UserController.cpp" />
       </list>
     </option>
   </component>
@@ -375,27 +381,28 @@
       <updated>1519937641998</updated>
       <workItem from="1519937648084" duration="5860000" />
       <workItem from="1523140702726" duration="27640000" />
-      <workItem from="1523169366559" duration="8552000" />
+      <workItem from="1523169366559" duration="16784000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="42052000" />
+    <option name="totallyTimeSpent" value="50284000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.115277775" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.115277775" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32941177" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.36117646" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.64941174" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -413,16 +420,29 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="90" />
+      <breakpoints>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/BShip/UserController.cpp</url>
+          <line>21</line>
+          <option name="timeStamp" value="93" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="94" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="CMakeRunConfiguration">
         <watch expression="enemyGrid" language="ObjectiveC" />
+        <watch expression="input.size();" language="ObjectiveC" />
       </configuration>
     </watches-manager>
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="watch">
+      <expression>
+        <expression-string>input.size();</expression-string>
+        <language-id>ObjectiveC</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
       <expression>
         <expression-string>enemyGrid</expression-string>
         <language-id>ObjectiveC</language-id>
@@ -465,11 +485,6 @@
       </expression>
       <expression>
         <expression-string>gameFinished</expression-string>
-        <language-id>ObjectiveC</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>hex2</expression-string>
         <language-id>ObjectiveC</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
@@ -550,7 +565,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
           <caret line="14" column="49" lean-forward="false" selection-start-line="14" selection-start-column="49" selection-end-line="14" selection-end-column="49" />
-          <folding />
+          <folding>
+            <element signature="e#115#134#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -574,9 +591,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1215">
           <caret line="81" column="13" lean-forward="false" selection-start-line="81" selection-start-column="13" selection-end-line="81" selection-end-column="13" />
-          <folding>
-            <element signature="e#52#74#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -684,7 +699,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
           <caret line="19" column="31" lean-forward="true" selection-start-line="19" selection-start-column="31" selection-end-line="19" selection-end-column="31" />
-          <folding />
+          <folding>
+            <element signature="e#115#134#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -712,9 +729,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#52#74#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -749,37 +764,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/BShip/UserController.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="49" lean-forward="false" selection-start-line="14" selection-start-column="49" selection-end-line="14" selection-end-column="49" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/BShip/BShipController.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
+        <state relative-caret-position="210">
           <caret line="14" column="31" lean-forward="false" selection-start-line="14" selection-start-column="31" selection-end-line="14" selection-end-column="31" />
           <folding>
             <element signature="e#117#134#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BShip/UserController.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="30" lean-forward="false" selection-start-line="5" selection-start-column="30" selection-end-line="5" selection-end-column="30" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -807,16 +798,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="23" lean-forward="false" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="23" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/BShip/BShip.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="447">
@@ -827,28 +808,28 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/BShip/BShipController.cpp">
+    <entry file="file://$PROJECT_DIR$/BShip/CPUController.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="46" lean-forward="false" selection-start-line="10" selection-start-column="46" selection-end-line="10" selection-end-column="46" />
+        <state relative-caret-position="-948">
+          <caret line="55" column="41" lean-forward="false" selection-start-line="55" selection-start-column="41" selection-end-line="55" selection-end-column="41" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/BShip/BShipGrid.cpp">
+    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="335" column="0" lean-forward="false" selection-start-line="335" selection-start-column="0" selection-end-line="335" selection-end-column="0" />
+        <state relative-caret-position="75">
+          <caret line="5" column="278" lean-forward="false" selection-start-line="5" selection-start-column="278" selection-end-line="5" selection-end-column="278" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/BShip/BShipGrid.h">
+    <entry file="file://$PROJECT_DIR$/main.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-43">
-          <caret line="29" column="0" lean-forward="true" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+        <state relative-caret-position="210">
+          <caret line="14" column="53" lean-forward="true" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="53" />
           <folding>
-            <element signature="e#105#122#0" expanded="true" />
+            <element signature="e#0#18#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -861,41 +842,75 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/BShip/CPUController.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-948">
-          <caret line="55" column="41" lean-forward="false" selection-start-line="55" selection-start-column="41" selection-end-line="55" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BShip/BShipGame.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="32" column="9" lean-forward="false" selection-start-line="32" selection-start-column="9" selection-end-line="32" selection-end-column="9" />
-          <folding>
-            <element signature="e#105#124#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/BShip/CPUController.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="252" lean-forward="false" selection-start-line="14" selection-start-column="252" selection-end-line="14" selection-end-column="252" />
+        <state relative-caret-position="360">
+          <caret line="24" column="30" lean-forward="true" selection-start-line="24" selection-start-column="30" selection-end-line="24" selection-end-column="30" />
           <folding>
             <element signature="e#113#132#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/BShip/BShipGame.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="359">
+          <caret line="51" column="30" lean-forward="false" selection-start-line="51" selection-start-column="30" selection-end-line="51" selection-end-column="30" />
+          <folding>
+            <element signature="e#105#124#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/BShip/BShipGame.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="42" column="65" lean-forward="false" selection-start-line="42" selection-start-column="65" selection-end-line="42" selection-end-column="65" />
+        <state relative-caret-position="180">
+          <caret line="38" column="20" lean-forward="false" selection-start-line="38" selection-start-column="20" selection-end-line="38" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BShip/BShipGrid.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="99">
+          <caret line="32" column="4" lean-forward="true" selection-start-line="32" selection-start-column="4" selection-end-line="32" selection-end-column="32" />
           <folding>
-            <element signature="e#52#74#0" expanded="true" />
+            <element signature="e#105#122#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BShip/UserController.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="32" lean-forward="false" selection-start-line="15" selection-start-column="32" selection-end-line="15" selection-end-column="32" />
+          <folding>
+            <element signature="e#115#134#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BShip/BShipGrid.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="189" column="0" lean-forward="true" selection-start-line="189" selection-start-column="0" selection-end-line="201" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BShip/BShipController.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="46" lean-forward="false" selection-start-line="10" selection-start-column="46" selection-end-line="10" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BShip/UserController.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="23" column="83" lean-forward="false" selection-start-line="23" selection-start-column="83" selection-end-line="23" selection-end-column="83" />
+          <folding />
         </state>
       </provider>
     </entry>

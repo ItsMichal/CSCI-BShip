@@ -6,14 +6,20 @@
 #define BSHIP_USERCONTROLLER_H
 
 #include <iostream>
+#include <string>
 #include "BShipController.h"
 
 class UserController : public BShipController {
 private:
-    istream inp; //input to parse from user
+    istream* inp; //input to parse from user
+    ostream* outp; //input to parse from user
+    int coordFromLetter(char x);
 public:
-    UserController(BShipGrid* _myGrid, BShipGrid* _enemyGrid, istream* _inp); //Constructor
-    vector<int> getNextMove(); //get the next move
+    UserController(BShipGrid* _myGrid, BShipGrid* _enemyGrid, istream* _inp = &cin, ostream* _outp = &cout); //Constructor
+    virtual vector<int> getNextCoordinates() final; //get the next move
+
+
+
 };
 
 

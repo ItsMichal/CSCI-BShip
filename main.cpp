@@ -9,10 +9,13 @@ int main() {
 
     ifstream hecc ("ship_placement.csv");
     BShipGame* game = new BShipGame(&cin, &hecc, &cout);
+    try {
+        game->runForever();
+    }catch (string const* e){
+        cout << endl << "Exception - " << *e << endl;
+        return 1;
+    }
 
-    game->runForever();
-
-    cout << "F" <<endl;
     //BShipGrid* grid = new BShipGrid();
     //grid->file_populate(&hecc);
     //cout << grid->displayFullGrid() << endl;
