@@ -9,6 +9,7 @@
 #include <string>
 #include "BShipController.h"
 
+//Gives the user control. What a concept.
 class UserController : public BShipController {
 private:
     istream* inp; //input to parse from user
@@ -17,9 +18,6 @@ private:
 public:
     UserController(BShipGrid* _myGrid, BShipGrid* _enemyGrid, istream* _inp = &cin, ostream* _outp = &cout); //Constructor
     virtual vector<int> getNextCoordinates() final; //get the next move
-
-
-
 };
 
 

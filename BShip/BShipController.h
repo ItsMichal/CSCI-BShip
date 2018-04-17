@@ -2,6 +2,12 @@
 // Created by Michal Bodzianowski on 3/1/18.
 //
 
+/*
+ *
+ * Description: A template class that childs can attach to in order to allow more flexibility for the input options.
+ *
+ */
+
 #ifndef BSHIP_BSHIPCONTROLLER_H
 #define BSHIP_BSHIPCONTROLLER_H
 

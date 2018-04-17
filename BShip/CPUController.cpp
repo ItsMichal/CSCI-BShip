@@ -5,9 +5,10 @@
 #include "CPUController.h"
 
 using namespace std;
+
 //"Default" Constructor
 CPUController::CPUController(BShipGrid *_myGrid, BShipGrid *_enemyGrid, int _difficulty) : BShipController(_myGrid, _enemyGrid) {
-    difficulty = _difficulty;
+    difficulty = _difficulty; //remember difficulty
     srand(time(nullptr)); //set random seed
 }
 
@@ -26,44 +27,89 @@ bool CPUController::setDifficulty(int d) {
     }
 }
 
+//Gets the next coordinates, required by parent.
 vector<int> CPUController::getNextCoordinates() {
-    if(difficulty == 0 || difficulty == 2){
+
+    //Difficulty switch, that well, should've been a switch
+    if(difficulty == 0 || difficulty == 2){ //Normal
         if(rand() % 2 == 0){
             return getRandomCoordinates();
         }else{
             return getSmartCoordinates();
         }
-    }else if(difficulty == 1){
+    }else if(difficulty == 1){ //Easy
         return getRandomCoordinates();
-    }else if(difficulty == 3){
+    }else if(difficulty == 3){ //Hard
         return getSmartCoordinates();
-    }else if(difficulty == 4){
+    }else if(difficulty == 4){ //Semi-Pro
         if(rand() % 4 == 0){
             return getCheaterCoordinates();
         }else{
             return getSmartCoordinates();
         }
-    }else if(difficulty == 5){
+    }else if(difficulty == 5){ //Pro
         if(rand() % 3 == 0){
             return getCheaterCoordinates();
         }else{
             return getSmartCoordinates();
         }
-    }else if(difficulty = 6){
+    }else if(difficulty = 6){ //World Champ
         if(rand() % 2 == 0){
             return getCheaterCoordinates();
         }else{
             return getSmartCoordinates();
         }
-    }else{
+    }else{ //Cheater
         return getCheaterCoordinates();
     }
 }
 
+//Gets 2 random coordinates, rather randomly.
+//Should be rewritten to avoid long lockups
+//when only a few spots are left...actually let me
+//do that real quick...
+
+//Alright did it. Now starts at a random point in the grid,
+//and then iterates through the rest of it until it reaches
+//an empty spot. Still random, but does not get hooked up.
 vector<int> CPUController::getRandomCoordinates() {
     vector<int> tcoords(2,0);
+    vector<int> fcoords(2,-1);
+    //Get a random starting point.
+    int startx = (rand() % (enemyGrid->getSize()));
+    int starty = (rand() % (enemyGrid->getSize()));
 
+    int gSize = enemyGrid->getSize();
     bool valid = false;
+    for(int i = startx; i < gSize; i++){
+        tcoords[0] = i;
+        for(int j = starty; j < gSize; j++){
+            tcoords[1] = j;
+            if(!(enemyGrid->getSpotAtCoords(tcoords).hit)){
+                fcoords[0] = i;
+                fcoords[1] = j;
+                return fcoords;
+            }
+
+            if(j == gSize-1){
+                j = -1;
+            }
+            if(j == starty-1) {
+                j = gSize;
+            }
+
+        }
+        if(i == gSize-1){
+            i = -1;
+        }
+        if(i == startx-1) {
+            i = gSize;
+        }
+    }
+
+
+    //OLD DUMB CODE FOR YOUR PLEASURE
+    /*bool valid = false;
     while(!valid){
         tcoords[0] = (rand() % (enemyGrid->getSize()))+1;
         tcoords[1] = (rand() % (enemyGrid->getSize()))+1;
@@ -72,8 +118,8 @@ vector<int> CPUController::getRandomCoordinates() {
             valid = true;
         }
     }
-
-    return tcoords;
+    */
+    return fcoords;
 }
 
 

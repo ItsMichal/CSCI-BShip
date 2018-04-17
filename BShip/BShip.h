@@ -13,9 +13,6 @@ using namespace std;
 
 class BShip {
 private:
-    //Mother grid object
-    //virtual BShipGrid grid;
-
     //Is sunk?
     bool sunk = false;
 

@@ -2,5 +2,3 @@ TypeOfShip,Location,HorizOrVer
 Carrier,B1,H
 Battleship,B5,H
 Cruiser,C2,H
-Submarine,G6,V
-Destroyer,H9,V
