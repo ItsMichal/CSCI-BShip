@@ -1,3 +1,5 @@
+This repository will be made public on May 5th, the end of the semester.
+
 # Battleship Game made in CPP
 
 A very good example of (mostly) clean object oriented code.
