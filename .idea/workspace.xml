@@ -12,20 +12,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="95706024-ebc9-4550-960c-b4940577502d" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/BShip/BShipFacts.cpp" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/BShip/BShipFacts.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/BShip/BShipGame.cpp" afterPath="$PROJECT_DIR$/BShip/BShipGame.cpp" />
-      <change beforePath="$PROJECT_DIR$/BShip/BShipGame.h" afterPath="$PROJECT_DIR$/BShip/BShipGame.h" />
-      <change beforePath="$PROJECT_DIR$/BShip/BShipGrid.cpp" afterPath="$PROJECT_DIR$/BShip/BShipGrid.cpp" />
-      <change beforePath="$PROJECT_DIR$/BShip/BShipGrid.h" afterPath="$PROJECT_DIR$/BShip/BShipGrid.h" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/BShip" afterPath="$PROJECT_DIR$/cmake-build-debug/BShip" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/BShip.dir/BShip/BShipGame.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/BShip.dir/BShip/BShipGame.cpp.o" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/BShip.dir/BShip/BShipGrid.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/BShip.dir/BShip/BShipGrid.cpp.o" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/BShip.dir/CXX.includecache" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/BShip.dir/CXX.includecache" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/BShip.dir/depend.internal" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/BShip.dir/depend.internal" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/BShip.dir/depend.make" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/BShip.dir/depend.make" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/BShip.dir/main.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/BShip.dir/main.cpp.o" />
+      <change beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
       <change beforePath="$PROJECT_DIR$/main.cpp" afterPath="$PROJECT_DIR$/main.cpp" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
@@ -39,24 +26,24 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="BShipGame.cpp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/BShip/BShipGame.cpp">
+      <file leaf-file-name="main.cpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/main.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-3260">
-              <caret line="191" column="26" lean-forward="false" selection-start-line="191" selection-start-column="26" selection-end-line="191" selection-end-column="26" />
-              <folding />
+            <state relative-caret-position="120">
+              <caret line="8" column="43" lean-forward="false" selection-start-line="8" selection-start-column="43" selection-end-line="8" selection-end-column="43" />
+              <folding>
+                <element signature="e#0#18#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.cpp" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/main.cpp">
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" column="44" lean-forward="false" selection-start-line="12" selection-start-column="44" selection-end-line="12" selection-end-column="44" />
-              <folding>
-                <element signature="e#0#18#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="150">
+              <caret line="10" column="43" lean-forward="false" selection-start-line="10" selection-start-column="43" selection-end-line="10" selection-end-column="43" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -76,6 +63,16 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="300">
               <caret line="20" column="14" lean-forward="false" selection-start-line="20" selection-start-column="14" selection-end-line="20" selection-end-column="14" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ship_placement2.csv" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cmake-build-debug/ship_placement2.csv">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="4" column="9" lean-forward="false" selection-start-line="4" selection-start-column="9" selection-end-line="4" selection-end-column="9" />
               <folding />
             </state>
           </provider>
@@ -113,23 +110,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BShipGame.h" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/BShip/BShipGame.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="209">
-              <caret line="14" column="26" lean-forward="false" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="26" />
-              <folding>
-                <element signature="e#105#124#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="test_one" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/cmake-build-debug/test_one">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="1410">
-              <caret line="94" column="2" lean-forward="true" selection-start-line="94" selection-start-column="2" selection-end-line="94" selection-end-column="2" />
+              <caret line="94" column="2" lean-forward="false" selection-start-line="94" selection-start-column="2" selection-end-line="94" selection-end-column="2" />
               <folding />
             </state>
           </provider>
@@ -139,7 +124,7 @@
         <entry file="file://$PROJECT_DIR$/cmake-build-debug/test_three">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="405">
-              <caret line="27" column="3" lean-forward="true" selection-start-line="27" selection-start-column="3" selection-end-line="27" selection-end-column="3" />
+              <caret line="27" column="3" lean-forward="false" selection-start-line="27" selection-start-column="3" selection-end-line="27" selection-end-column="3" />
               <folding />
             </state>
           </provider>
@@ -188,7 +173,6 @@
         <option value="$PROJECT_DIR$/BShipGame.h" />
         <option value="$PROJECT_DIR$/BShip/BShipController.cpp" />
         <option value="$PROJECT_DIR$/CMakeLists.txt" />
-        <option value="$PROJECT_DIR$/cmake-build-debug/ship_placement2.csv" />
         <option value="$PROJECT_DIR$/BShip/BShip.cpp" />
         <option value="$PROJECT_DIR$/BShip/BShipController.h" />
         <option value="$PROJECT_DIR$/BShip/BShipGridSpot.h" />
@@ -207,7 +191,9 @@
         <option value="$PROJECT_DIR$/BShip/BShipGrid.cpp" />
         <option value="$PROJECT_DIR$/cmake-build-debug/ship_placement.csv" />
         <option value="$PROJECT_DIR$/cmake-build-debug/test_two" />
+        <option value="$PROJECT_DIR$/cmake-build-debug/ship_placement2.csv" />
         <option value="$PROJECT_DIR$/main.cpp" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -311,12 +297,12 @@
       <workItem from="1523140702726" duration="27640000" />
       <workItem from="1523169366559" duration="22776000" />
       <workItem from="1523250413803" duration="16793000" />
-      <workItem from="1523321510411" duration="17402000" />
+      <workItem from="1523321510411" duration="17835000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="90471000" />
+    <option name="totallyTimeSpent" value="90904000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -420,14 +406,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/BShip/BShipFacts.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/BShip/UserController.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
@@ -577,7 +555,7 @@
         <state relative-caret-position="585">
           <caret line="39" column="4" lean-forward="true" selection-start-line="39" selection-start-column="4" selection-end-line="39" selection-end-column="4" />
           <folding>
-            <element signature="e#105#124#0" expanded="true" />
+            <element signature="e#105#124#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -749,14 +727,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cmake-build-debug/ship_placement2.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="5" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/BShip/BShipGame.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-3260">
@@ -770,7 +740,7 @@
         <state relative-caret-position="209">
           <caret line="14" column="26" lean-forward="false" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="26" />
           <folding>
-            <element signature="e#105#124#0" expanded="true" />
+            <element signature="e#105#124#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -779,14 +749,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="212">
           <caret line="118" column="62" lean-forward="false" selection-start-line="118" selection-start-column="62" selection-end-line="118" selection-end-column="62" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cmake-build-debug/ship_placement.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="14" lean-forward="false" selection-start-line="20" selection-start-column="14" selection-end-line="20" selection-end-column="14" />
           <folding />
         </state>
       </provider>
@@ -812,7 +774,7 @@
     <entry file="file://$PROJECT_DIR$/cmake-build-debug/test_three">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="405">
-          <caret line="27" column="3" lean-forward="true" selection-start-line="27" selection-start-column="3" selection-end-line="27" selection-end-column="3" />
+          <caret line="27" column="3" lean-forward="false" selection-start-line="27" selection-start-column="3" selection-end-line="27" selection-end-column="3" />
           <folding />
         </state>
       </provider>
@@ -828,18 +790,42 @@
     <entry file="file://$PROJECT_DIR$/cmake-build-debug/test_one">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1410">
-          <caret line="94" column="2" lean-forward="true" selection-start-line="94" selection-start-column="2" selection-end-line="94" selection-end-column="2" />
+          <caret line="94" column="2" lean-forward="false" selection-start-line="94" selection-start-column="2" selection-end-line="94" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cmake-build-debug/ship_placement.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="14" lean-forward="false" selection-start-line="20" selection-start-column="14" selection-end-line="20" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cmake-build-debug/ship_placement2.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="9" lean-forward="false" selection-start-line="4" selection-start-column="9" selection-end-line="4" selection-end-column="9" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/main.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="44" lean-forward="false" selection-start-line="12" selection-start-column="44" selection-end-line="12" selection-end-column="44" />
+        <state relative-caret-position="120">
+          <caret line="8" column="43" lean-forward="false" selection-start-line="8" selection-start-column="43" selection-end-line="8" selection-end-column="43" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="43" lean-forward="false" selection-start-line="10" selection-start-column="43" selection-end-line="10" selection-end-column="43" />
+          <folding />
         </state>
       </provider>
     </entry>
