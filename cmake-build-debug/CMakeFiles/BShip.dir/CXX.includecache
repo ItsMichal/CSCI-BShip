@@ -26,8 +26,6 @@ vector
 BShipGrid.h
 /Users/michal/CLionProjects/BShip/BShip/BShipGrid.h
 
-/Users/michal/CLionProjects/BShip/BShip/BShipFacts.h
-
 /Users/michal/CLionProjects/BShip/BShip/BShipGame.cpp
 BShipGame.h
 /Users/michal/CLionProjects/BShip/BShip/BShipGame.h
@@ -47,8 +45,6 @@ UserController.h
 /Users/michal/CLionProjects/BShip/BShip/UserController.h
 CPUController.h
 /Users/michal/CLionProjects/BShip/BShip/CPUController.h
-BShipFacts.h
-/Users/michal/CLionProjects/BShip/BShip/BShipFacts.h
 
 /Users/michal/CLionProjects/BShip/BShip/BShipGrid.cpp
 BShipGrid.h

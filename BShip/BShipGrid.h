@@ -44,7 +44,7 @@ public:
     //depending on stability, but I don't have time to test them all. static for use in BShipGame
     static const int MAX_SIZE = 25;
     static const int MIN_SIZE = 5;
-    static const int MAX_SHIP_SIZE = 15;
+    static const int MAX_SHIP_SIZE = 100;
     static const int MIN_SHIP_SIZE = 1;
 
     //Constructor, also doubles as the default one. Useful.

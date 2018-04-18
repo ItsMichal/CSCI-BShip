@@ -13,7 +13,6 @@
 #include "BShipController.h"
 #include "UserController.h"
 #include "CPUController.h"
-#include "BShipFacts.h"
 
 using namespace std;
 
@@ -60,14 +59,15 @@ private:
             "\n-When it's your turn, enter coordinates in the format '(Letter)(Number)', i.e. 'A1'"
             "\n-Game ends when all of one or the others ships are sunk!";
 
-    static const int menuItems = 7; //why does it have to be static if its already const...? how can a const change? it's probably something to do with it being needed at compile time
+    static const int menuItems = 8; //why does it have to be static if its already const...? how can a const change? it's probably something to do with it being needed at compile time
     const string menuStrings[menuItems] = {
             "View Instructions",
             "Set Difficulty (BONUS!)",
-            "Set New Ship File",
+            "Set New CSV File",
             "Set Grid Size (BONUS!)",
             "Set Ship Count (BONUS!)",
-            "Play",
+            "Play!",
+            "Become A Robot / Simulate! (BONUS!)",
             "Quit"
     };
 

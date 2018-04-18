@@ -13,7 +13,6 @@ CMakeFiles/BShip.dir/BShip/BShipController.cpp.o
 CMakeFiles/BShip.dir/BShip/BShipGame.cpp.o
  /Users/michal/CLionProjects/BShip/BShip/BShip.h
  /Users/michal/CLionProjects/BShip/BShip/BShipController.h
- /Users/michal/CLionProjects/BShip/BShip/BShipFacts.h
  /Users/michal/CLionProjects/BShip/BShip/BShipGame.cpp
  /Users/michal/CLionProjects/BShip/BShip/BShipGame.h
  /Users/michal/CLionProjects/BShip/BShip/BShipGrid.h
@@ -42,7 +41,6 @@ CMakeFiles/BShip.dir/BShip/UserController.cpp.o
 CMakeFiles/BShip.dir/main.cpp.o
  /Users/michal/CLionProjects/BShip/BShip/BShip.h
  /Users/michal/CLionProjects/BShip/BShip/BShipController.h
- /Users/michal/CLionProjects/BShip/BShip/BShipFacts.h
  /Users/michal/CLionProjects/BShip/BShip/BShipGame.h
  /Users/michal/CLionProjects/BShip/BShip/BShipGrid.h
  /Users/michal/CLionProjects/BShip/BShip/BShipGridSpot.h

@@ -28,9 +28,9 @@ BShipGrid::BShipGrid(int _size, int _shipsize) : ships(0){ //the ships vector co
 
     //set Ship count/size
     shipSize = _shipsize;
-    if(size > MAX_SHIP_SIZE){
+    if(shipSize > MAX_SHIP_SIZE){
         throw new string("Ship count is too large. Valid grid sizes are from " + to_string(MIN_SHIP_SIZE)+ " to "+to_string(MAX_SHIP_SIZE)+".");
-    }else if(size < MIN_SHIP_SIZE){
+    }else if(shipSize < MIN_SHIP_SIZE){
         throw new string("Ship count is too small. Valid grid sizes are from " + to_string(MIN_SHIP_SIZE)+ " to "+to_string(MAX_SHIP_SIZE)+".");
     }
 }
@@ -111,12 +111,12 @@ void BShipGrid::file_populate(ifstream *finp) {
                         case 1: //coordinates get
 
                             //preliminary input okay check
-                            if(cell.size() == 2 && isdigit(cell[1]) && isalpha(cell[0])){
+                            if(cell.size() >= 2 && stoi(cell.substr(1)) && isalpha(cell[0])){
                                 //accept input and check if in bounds
                                 int x = coordFromLetter(cell[0]);
                                 if(x == -1) throw new string("Letter Value Out of Bounds - Invalid Entry at Line " + to_string(cntr+1) + ", Cell " + to_string(subcntr+1));
 
-                                int y = cell[1] - 49;
+                                int y = stoi(cell.substr(1))-1;
                                 if(y < 0 || y > size-1) throw new string("Number Value Out Of Bounds - Invalid Entry at Line " + to_string(cntr+1) + ", Cell " + to_string(subcntr+1));
 
                                 tempcoords[0] = y; //row
@@ -416,11 +416,13 @@ void BShipGrid::rand_populate() {
     srand(time(nullptr)); //set seed
 
     //---CONFIG---
-    const int max_count = 90000; //protection against infinite loops.
-    int count = 0;
+    const int max_count = 900000; //protection against infinite loops.
+    int count = 1;
     int sizes[5] = {5,4,3,3,2};
     string names[5] = {"Carrier", "Battleship", "Submarine", "Cruiser", "Destroyer"};
     //------------
+
+    vector<BShip*> holder;
 
     for(int i = 0; i < shipSize; i++){
         bool valid = false;
@@ -433,10 +435,10 @@ void BShipGrid::rand_populate() {
             //smart assign trow and and tcol, so it doesn't go OoB
             if(thorizontal){
                 trow = rand() % (size);
-                tcol = rand() % ((size)-sizes[i]+1);
+                tcol = rand() % ((size)-sizes[i%5]+1);
             }else{
                 tcol = rand() % (size);
-                trow = rand() % ((size)-sizes[i]+1);
+                trow = rand() % ((size)-sizes[i%5]+1);
             }
 
             //assign
@@ -444,7 +446,7 @@ void BShipGrid::rand_populate() {
             tcoord[1] = tcol;
 
             //create temp object
-            BShip* temp = new BShip(names[i], sizes[i], thorizontal, tcoord);
+            BShip* temp = new BShip(names[i%5], sizes[i%5], thorizontal, tcoord);
 
             //check if valid?
             if(validate(temp)){

@@ -131,6 +131,17 @@ bool BShipGame::setup() {
                     *outp << "Enter a valid grid size ("<< to_string(BShipGrid::MIN_SIZE) <<"-"<< to_string(BShipGrid::MAX_SIZE) << "): " << endl;
                     gridSize = getValidInput(BShipGrid::MAX_SIZE, BShipGrid::MIN_SIZE);
 
+
+                    bool check = (shipCount <= gridSize + (gridSize-5)*(2*floor(gridSize/10)+1));
+                    while(!check){
+                        *outp << "Sorry, but that's not a safe value for "<< shipCount << " ships. Consider changing the size later." << endl;
+                        *outp << "For now, please enter a lower value." << endl;
+                        *outp << "Enter a valid grid size ("<< to_string(BShipGrid::MIN_SIZE) <<"-"<< to_string(BShipGrid::MAX_SIZE) << "): " << endl;
+                        gridSize = getValidInput(BShipGrid::MAX_SIZE, BShipGrid::MIN_SIZE);
+                        check = (shipCount <= gridSize + (gridSize-5)*(2*floor(gridSize/10)+1));
+                    }
+
+
                     //Grids instantiation
                     playerOneGrid = new BShipGrid(gridSize, shipCount);
                     playerTwoGrid = new BShipGrid(gridSize, shipCount);
@@ -143,17 +154,30 @@ bool BShipGame::setup() {
                 }
                 case 5 : { //Set ship count
                     //uinput
-                    *outp << "Enter a valid grid size ("<< to_string(BShipGrid::MIN_SHIP_SIZE) <<"-"<< to_string(BShipGrid::MAX_SHIP_SIZE) << "): " << endl;
+                    *outp << "Enter a valid ship count ("<< to_string(BShipGrid::MIN_SHIP_SIZE) <<"-"<< to_string(BShipGrid::MAX_SHIP_SIZE) << "): " << endl;
                     shipCount = getValidInput(BShipGrid::MAX_SHIP_SIZE, BShipGrid::MIN_SHIP_SIZE);
+
+                    //Check to see if it will work
+
+                    bool check = (shipCount <= gridSize + (gridSize-5)*(2*floor(gridSize/10)+1));
+                    while(!check){
+                        *outp << "Sorry, but that's not a safe value for a " << gridSize << "x" << gridSize << ". Consider changing the size later." << endl;
+                        *outp << "For now, please enter a safe value below " << to_string(1+floor((gridSize + (gridSize-5)*(2*floor(gridSize/10)+1)))) << endl;
+                        *outp << "Enter a valid ship count ("<< to_string(BShipGrid::MIN_SHIP_SIZE) <<"-"<< to_string(BShipGrid::MAX_SHIP_SIZE) << "): " << endl;
+                        shipCount = getValidInput(BShipGrid::MAX_SHIP_SIZE, BShipGrid::MIN_SHIP_SIZE);
+                        check = (shipCount <= gridSize + (gridSize-5)*(2*floor(gridSize/10)+1));
+                    }
 
                     //Grids instantiation
                     playerOneGrid = new BShipGrid(gridSize, shipCount);
                     playerTwoGrid = new BShipGrid(gridSize, shipCount);
 
+
+
                     //Create Controllers
                     playerOne = new UserController(playerOneGrid, playerTwoGrid, inp, outp);
                     playerTwo = new CPUController(playerTwoGrid, playerOneGrid, difficulty);
-                    *outp << "Successfully set grid to " << gridSize << "x" << gridSize << "." << endl << endl;
+                    *outp << "Successfully set ship count to " << shipCount << "." << endl << endl;
                     break;
                 }
                 case 6 : { //Play
@@ -161,7 +185,13 @@ bool BShipGame::setup() {
                     *outp << "Initializing game..." << endl;
                     break;
                 }
-                case 7 : { //Quit
+                case 7 : { //sim CPU
+                    playerOne = new CPUController(playerOneGrid, playerTwoGrid, difficulty);
+                    inputDone = true;
+                    *outp << "Initializing CPU game..." << endl;
+                    break;
+                }
+                case 8 : { //Quit
                     throw new string("User has quit, exiting...");
                     break;
                 }
