@@ -1,4 +1,4 @@
-This repository will be made public on May 5th, the end of the semester.
+This repository is now public. ~~will be made public on May 5th, the end of the semester.~~
 
 # Battleship Game made in CPP
 
